@@ -14,4 +14,3 @@ Set your linux usb bus latency timer to 1 or 0 !!!!
 see comment here
 
 https://github.com/bit-bots/DynamixelSDK/blob/master/c%2B%2B/src/dynamixel_sdk/port_handler_linux.cpp
-# sahr_ros_control
