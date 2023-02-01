@@ -1,0 +1,3669 @@
+#VRML_SIM R2023a utf8
+# license: Apache License 2.0
+# license url: http://www.apache.org/licenses/LICENSE-2.0
+# This is a proto file for Webots for the SAHRV69
+# Extracted from: SAHR_v69/urdf/SAHR_v69.urdf
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/joints/protos/HingeJointWithBacklash.proto"
+EXTERNPROTO ".SAHRV71_meshes/SAHRV71_num_04Mesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_left_hip_panelMesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_joint_block02Mesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_u_block_2_bone1Mesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_right_humerus_1Mesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_right_foot_cleat_back_leftMesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_dubel02Mesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_right_radius_bone2Mesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_head_baseMesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_mx106_block_1Mesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_left_shin_panelMesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_left_foot_cleat_front_rightMesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_u_block_2_bone2Mesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_right_footMesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_left_foot_cleat_front_leftMesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_right_knee_1Mesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_right_hip_panelMesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_left_knee_bone_2Mesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_left_humerus_panelMesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_right_foot_cleat_front_leftMesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_u_block_1Mesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_left_humerus_1Mesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_right_radius_1Mesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_tibia_12Mesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_u_block_1_bone2Mesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_right_shine_panelMesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_u_block_2Mesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_u_neck_1Mesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_dubel04Mesh.proto"
+EXTERNPROTO ".SAHRV71_meshes/SAHRV71_number_03Mesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_u_shoulder_2_bone_frontMesh.proto"
+EXTERNPROTO ".SAHRV71_meshes/SAHRV71_num_02Mesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_cover_batteryMesh.proto"
+EXTERNPROTO ".SAHRV71_meshes/SAHRV71_right_foot_1_7_foot_protectionMesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_left_foot_bone_frontMesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_HandleMesh.proto"
+EXTERNPROTO ".SAHRV71_meshes/SAHRV71_num_03Mesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_left_footMesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_left_knee_bone_1Mesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_left_panelMesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_right_foot_bone_frontMesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_right_boxing_gloveMesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_left_boxing_gloveMesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_dubel03Mesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_right_humerus_panelMesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_DXL_BoardMesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_left_radius_bone2Mesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_mx106_block_mir_1Mesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_front_panelMesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_tibia_21Mesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_right_foot_cleat_front_rightMesh.proto"
+EXTERNPROTO ".SAHRV71_meshes/SAHRV71_number_04Mesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_u_shoulder_1_bone_frontMesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_joint_block04Mesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_u_shoulder_2Mesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_right_foot_bone_backMesh.proto"
+EXTERNPROTO ".SAHRV71_meshes/SAHRV71_num_01Mesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_left_radius_bone1Mesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_right_knee_bone_2Mesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_tibia_2Mesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_left_foot_bone_backMesh.proto"
+EXTERNPROTO ".SAHRV71_meshes/SAHRV71_number_02Mesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_left_foot_cleat_back_rightMesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_tibia_22Mesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_u_neck_bone_rightMesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_left_foot_1Mesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_left_knee_1Mesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_trunkMesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_mx106_block_mir_2Mesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_Head_UpMesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_right_radius_bone1Mesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_joint_block03Mesh.proto"
+EXTERNPROTO ".SAHRV71_meshes/SAHRV71_num_05Mesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_trunk_1Mesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_u_shoulder_2_bone_backMesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_u_block_1_bone1Mesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_left_radius_1Mesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_tibia_1Mesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_right_radius_1_0_radius_plateMesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_camera_rightMesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_mx106_block_2Mesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_left_radius_1_1_radius_plateMesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_dubel01Mesh.proto"
+EXTERNPROTO ".SAHRV71_meshes/SAHRV71_number_05Mesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_right_foot_cleat_back_rightMesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_left_foot_cleat_back_leftMesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_Front_dempherMesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_head_1Mesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_u_shoulder_1Mesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_right_panelMesh.proto"
+EXTERNPROTO ".SAHRV71_meshes/SAHRV71_number_01Mesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_right_foot_1Mesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_tibia_11Mesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_u_shoulder_1_bone_backMesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_camera_leftMesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_joint_block01Mesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_right_knee_bone_1Mesh.proto"
+EXTERNPROTO "SAHRV69_meshes/SAHRV69_u_neck_bone_leftMesh.proto"
+
+PROTO SAHRV69 [
+  field  SFVec3f     translation     0 0 0.4
+  field  SFRotation  rotation        0 1 0 0
+  field  SFString    name            "SAHRV69"  # Is `Robot.name`.
+  field  SFString    controller      "player"     # Is `Robot.controller`.
+  field  MFString    controllerArgs  []         # Is `Robot.controllerArgs`.
+  field  SFString    customData      ""         # Is `Robot.customData`.
+  field  SFBool      supervisor      FALSE      # Is `Robot.supervisor`.
+  field  SFBool      synchronization TRUE       # Is `Robot.synchronization`.
+  field  SFBool      selfCollision   FALSE                   # Is `Robot.selfCollision`.
+  field  SFBool      backlash        TRUE               # Enables backlash on all joints.
+  field SFString{"", "red", "blue"}      teamColor ""
+  field SFString{"", "1", "2", "3", "4", "5"}      playerNumber ""
+
+  field SFFloat      MX64_torque_14_8V     7.30
+  field SFFloat      MX64_vel_14_8V        8.17
+  field SFFloat      MX64_damping_14_8V    0.65
+  field SFFloat      MX64_friction_14_8V   1.73
+  field SFFloat      MX64_backlash         0.01
+  field SFFloat      MX64_resolution       0.0015
+
+  field SFFloat      MX106_torque_14_8V    10.00
+  field SFFloat      MX106_vel_14_8V       5.76
+  field SFFloat      MX106_damping_14_8V   1.23
+  field SFFloat      MX106_friction_14_8V  2.55
+  field SFFloat      MX106_backlash        0.01
+  field SFFloat      MX106_resolution      0.0015
+
+  field SFColor     RED      1.0 0.0 0.0
+  field SFColor     BLUE     0.0 0.0 1.0
+]
+{
+  %{
+    jerseyColor = ""
+    number = ""
+    if fields.name.value ~= "SAHRV69" then
+      -- name is supposed to be something like "red player 2" or "blue player 1"
+      local words = {}
+      for word in fields.name.value:gmatch("%w+") do 
+        table.insert(words, word) 
+      end
+      jerseyColor = words[1]
+      number = words[3]
+    end
+    if fields.teamColor.value ~= "" then
+      jerseyColor = fields.teamColor.value
+    end
+    if fields.playerNumber.value ~= "" then
+      number = fields.playerNumber.value
+    end
+    enable_backlash = fields.backlash.value
+    -- tune backlash on joints
+    backlash_mx64 = fields.MX64_backlash.value
+    backlash_mx106 = fields.MX106_backlash.value
+
+    torque_mx106 = fields.MX106_torque_14_8V.value
+    torque_mx64 = fields.MX64_torque_14_8V.value
+  
+    vel_mx106 = fields.MX106_vel_14_8V.value
+    damping_mx106 = fields.MX106_damping_14_8V.value
+    friction_mx106 = fields.MX106_friction_14_8V.value
+    resolution_mx106 = fields.MX106_resolution.value
+
+    vel_mx64 = fields.MX64_vel_14_8V.value
+    damping_mx64 = fields.MX64_damping_14_8V.value
+    friction_mx64 = fields.MX64_friction_14_8V.value
+    resolution_mx64 = fields.MX64_resolution.value
+
+    accelerometer_range_g = 8
+    gyro_range_deg_s = 1000
+
+    
+  }%
+  Robot {
+    translation IS translation
+    rotation IS rotation
+    controller IS controller
+    controllerArgs IS controllerArgs
+    customData IS customData
+    supervisor IS supervisor
+    synchronization IS synchronization
+    selfCollision IS selfCollision
+    recognitionColors 0 0 1
+    model "SAHR"
+    children [
+      SAHRV69_trunk_1Mesh {
+      }
+      %{ if enable_backlash then }%
+        DEF head_yaw HingeJointWithBacklash {
+          gearMass 0.001
+          backlash %{= backlash_mx64 }%
+      %{ else }%
+        DEF head_yaw HingeJoint {
+      %{ end }%
+        jointParameters HingeJointParameters {
+          axis 0.000000 0.000000 -1.000000
+          anchor 0.050658 -0.011338 0.184196
+          dampingConstant %{= damping_mx64}%
+          staticFriction  %{= friction_mx64}%
+        }
+        device [
+          RotationalMotor {
+            name "head_yaw"
+            maxTorque       %{= torque_mx64}%
+            maxVelocity     %{= vel_mx64}%
+          }
+          PositionSensor {
+            name "head_yaw_sensor"
+            resolution %{= resolution_mx64}%
+          }
+        ]
+        endPoint Solid {
+          translation 0.050658 -0.011338 0.184196
+          rotation 0.000000 1.000000 0.000000 0.000000
+          children [
+            SAHRV69_u_neck_1Mesh {
+            }
+            %{ if enable_backlash then }%
+              DEF head_pitch HingeJointWithBacklash {
+                gearMass 0.001
+                backlash %{= backlash_mx64 }%
+            %{ else }%
+              DEF head_pitch HingeJoint {
+            %{ end }%
+              jointParameters HingeJointParameters {
+                axis 0.999884 -0.015247 -0.000000
+                anchor 0.000000 0.000079 0.035704
+                dampingConstant %{= damping_mx64}%
+                staticFriction  %{= friction_mx64}%
+              }
+              device [
+                RotationalMotor {
+                  name "head_pitch"
+                  maxTorque       %{= torque_mx64}%
+                  maxVelocity     %{= vel_mx64}%
+                }
+                PositionSensor {
+                  name "head_pitch_sensor"
+                  resolution %{= resolution_mx64}%
+                }
+              ]
+              endPoint Solid {
+                translation 0.000000 0.000079 0.035704
+                rotation -0.577350 0.577350 -0.577350 2.094395
+                children [
+                  SAHRV69_head_1Mesh {
+                  }
+                  Solid {
+                    translation -0.013333 -0.047600 -0.017000
+                    rotation 0.707107 -0.000000 0.707106 3.141593
+                    children [
+                      SAHRV69_Head_UpMesh {
+                      }
+                    ]
+                    name "Head_Up"
+                    boundingObject Transform {
+                      translation 0.017000 0.021490 0.011412
+                      rotation 0.000000 1.000000 0.000000 0.000000
+                      children [
+                        Box {
+                          size 0.113972 0.053780 0.090000
+                        }
+                      ]
+                    }
+                    physics Physics {
+                      density -1
+                      mass 0.300905
+                      centerOfMass [ 0.017038 0.020221 0.017863 ]
+                      inertiaMatrix [
+                        1.014090e-04 2.061129e-04 1.574972e-04
+                        -9.314016e-08 2.126640e-07 7.675360e-06
+                      ]
+                    }
+                  }
+                  Camera {
+                    fieldOfView            1.762 #2.27  # [0, pi]
+                    width                  1440    # [0, inf)
+                    height                 1080     # [0, inf)
+                    spherical              FALSE    # {TRUE, FALSE}
+                    near                   0.01    # [0, inf)
+                    far                    0.0     # [0, inf)
+                    exposure               1.0     # [near, inf)
+                    antiAliasing           FALSE   # {TRUE, FALSE}
+                    ambientOcclusionRadius 0       # [0, inf)
+                    bloomThreshold         -1.0    # [-1, inf)
+                    motionBlur             0.0     # [0, inf)
+                    noise                  0.0     # [0, 1]
+                    noiseMaskUrl           ""      # any string
+                    lens                   Lens {
+                                                  center                 0.5 0.5   # [0, 1] [0, 1]
+                                                  radialCoefficients     -0.26 -0.26       # any vector
+                                                  tangentialCoefficients 0 0       # any vector
+                                                          }
+                    focus                  NULL    # {Focus, PROTO}
+                    zoom                   NULL    # {Zoom, PROTO}
+                    recognition            NULL   # {Recognition, PROTO}
+                    lensFlare              NULL    # {LensFlare, PROTO}
+                    translation 0.037313 -0.070000 0.031000
+                    #rotation 0.999964 -0.005962 -0.005962 1.570832
+                    rotation               0.707 0.0 -0.707 3.14
+                    name                   "left_camera"
+
+                    children [
+                      DEF camera_left Solid {
+                        children [
+                          SAHRV69_camera_leftMesh {
+                          }
+                        ]
+                        name "camera_left"
+                      }
+                    ]
+                  }
+
+                  Camera {
+                    fieldOfView            1.762 # 2.27  # [0, pi]
+                    width                  720    # [0, inf)
+                    height                 540     # [0, inf)
+                    spherical              FALSE    # {TRUE, FALSE}
+                    near                   0.01    # [0, inf)
+                    far                    0.0     # [0, inf)
+                    exposure               1.0     # [near, inf)
+                    antiAliasing           FALSE   # {TRUE, FALSE}
+                    ambientOcclusionRadius 0       # [0, inf)
+                    bloomThreshold         -1.0    # [-1, inf)
+                    motionBlur             0.0     # [0, inf)
+                    noise                  0.0     # [0, 1]
+                    noiseMaskUrl           ""      # any string
+                    lens                   Lens {
+                                                  center                 0.5 0.5   # [0, 1] [0, 1]
+                                                  radialCoefficients     -0.26 -0.26       # any vector
+                                                  tangentialCoefficients 0 0       # any vector
+                                                          }
+                    focus                  NULL    # {Focus, PROTO}
+                    zoom                   NULL    # {Zoom, PROTO}
+                    recognition            NULL    # {Recognition, PROTO}
+                    lensFlare              NULL    # {LensFlare, PROTO}
+                    translation 0.037312 -0.070000 -0.031000
+                    rotation               0.707 0.0 -0.707 3.14
+                    name                   "right_camera"
+
+                    children [
+                      DEF camera_right Solid {
+                        
+                        children [
+                          SAHRV69_camera_rightMesh {
+                          }
+                        ]
+                        name "camera_right"
+                      }
+                    ]
+                  }
+                ]
+                name "head_1"
+                boundingObject Transform {
+                  translation 0.000079 -0.016550 0.000000
+                  rotation 0.000000 1.000000 0.000000 0.000000
+                  children [
+                    Box {
+                      size 0.040200 0.062100 0.047000
+                    }
+                  ]
+                }
+                physics Physics {
+                  density -1
+                  mass 0.143930
+                  centerOfMass [ 0.000079 -0.014340 -0.000287 ]
+                  inertiaMatrix [
+                    5.757008e-05 3.270303e-05 4.850776e-05
+                    2.266866e-11 -3.266193e-11 -1.641461e-06
+                  ]
+                }
+              }
+            }
+            Solid {
+              translation -0.026500 0.000100 0.035204
+              rotation 0.577350 0.577350 -0.577350 2.094395
+              children [
+                SAHRV69_u_neck_bone_rightMesh {
+                }
+              ]
+              name "u_neck_bone_right"
+              boundingObject Transform {
+                translation 0.009875 0.001500 0.000100
+                rotation 0.000000 1.000000 0.000000 0.000000
+                children [
+                  Box {
+                    size 0.040850 0.003000 0.030000
+                  }
+                ]
+              }
+              physics Physics {
+                density -1
+                mass 0.004792
+                centerOfMass [ 0.012953 0.001500 0.000100 ]
+                inertiaMatrix [
+                  3.650961e-07 9.043631e-07 5.464543e-07
+                  3.262406e-14 -5.552077e-13 5.862710e-13
+                ]
+              }
+            }
+            Solid {
+              translation 0.023500 0.000100 0.035204
+              rotation 0.577350 0.577350 -0.577350 2.094395
+              children [
+                SAHRV69_u_neck_bone_leftMesh {
+                }
+              ]
+              name "u_neck_bone_left"
+              boundingObject Transform {
+                translation 0.009875 0.001500 0.000100
+                rotation 0.000000 1.000000 0.000000 0.000000
+                children [
+                  Box {
+                    size 0.040850 0.003000 0.030000
+                  }
+                ]
+              }
+              physics Physics {
+                density -1
+                mass 0.004792
+                centerOfMass [ 0.012953 0.001500 0.000100 ]
+                inertiaMatrix [
+                  3.650961e-07 9.043631e-07 5.464543e-07
+                  3.262406e-14 -5.552077e-13 5.862710e-13
+                ]
+              }
+            }
+          ]
+          name "u_neck_1"
+          boundingObject Transform {
+            translation 0.000000 0.000000 0.007004
+            rotation 0.000000 1.000000 0.000000 0.000000
+            children [
+              Box {
+                size 0.053000 0.047000 0.007000
+              }
+            ]
+          }
+          physics Physics {
+            density -1
+            mass 0.016313
+            centerOfMass [ 0.000000 0.000000 0.005978 ]
+            inertiaMatrix [
+              2.000976e-06 4.314258e-06 6.176757e-06
+              3.645197e-12 -7.922845e-15 -1.304717e-14
+            ]
+          }
+        }
+      }
+      %{ if enable_backlash then }%
+        DEF left_hip_yaw HingeJointWithBacklash {
+          gearMass 0.001
+          backlash %{= backlash_mx106 }%
+      %{ else }%
+        DEF left_hip_yaw HingeJoint {
+      %{ end }%
+        jointParameters HingeJointParameters {
+          axis -0.000000 -0.000000 1.000000
+          anchor 0.097033 0.014615 -0.008900
+          dampingConstant %{= damping_mx106}%
+          staticFriction  %{= friction_mx106}%
+        }
+        device [
+          RotationalMotor {
+            name "left_hip_yaw"
+            maxTorque       %{= torque_mx106}%
+            maxVelocity     %{= vel_mx106}%
+          }
+          PositionSensor {
+            name "left_hip_yaw_sensor"
+            resolution %{= resolution_mx106}%
+          }
+        ]
+        endPoint Solid {
+          translation 0.097033 0.014615 -0.008900
+          rotation 0.706488 -0.707725 -0.000000 3.141593
+          children [
+            SAHRV69_u_block_2Mesh {
+            }
+            Solid {
+              translation 0.032918 -0.000058 0.037000
+              rotation 0.577013 0.578024 -0.577013 2.093384
+              children [
+                SAHRV69_u_block_2_bone1Mesh {
+                }
+              ]
+              name "u_block_2_bone1"
+              boundingObject Transform {
+                translation 0.008725 0.001500 -0.000000
+                rotation 0.000000 1.000000 0.000000 0.000000
+                children [
+                  Box {
+                    size 0.044550 0.003000 0.030000
+                  }
+                ]
+              }
+              physics Physics {
+                density -1
+                mass 0.005121
+                centerOfMass [ 0.011155 0.001454 0.000000 ]
+                inertiaMatrix [
+                  3.925086e-07 1.040646e-06 6.556397e-07
+                  4.042085e-09 -4.851645e-13 -1.180276e-12
+                ]
+              }
+            }
+            Solid {
+              translation -0.023385 0.000041 0.037000
+              rotation 0.577014 0.578023 -0.577014 2.093386
+              children [
+                SAHRV69_u_block_2_bone2Mesh {
+                }
+              ]
+              name "u_block_2_bone2"
+              boundingObject Transform {
+                translation 0.008725 -0.001500 0.000000
+                rotation 0.000000 1.000000 0.000000 0.000000
+                children [
+                  Box {
+                    size 0.044550 0.003000 0.030000
+                  }
+                ]
+              }
+              physics Physics {
+                density -1
+                mass 0.003880
+                centerOfMass [ 0.012980 -0.001198 -0.000000 ]
+                inertiaMatrix [
+                  3.021668e-07 7.907772e-07 4.929442e-07
+                  5.579849e-09 -2.784248e-13 -4.288930e-15
+                ]
+              }
+            }
+            %{ if enable_backlash then }%
+              DEF left_hip_roll HingeJointWithBacklash {
+                gearMass 0.001
+                backlash %{= backlash_mx106 }%
+            %{ else }%
+              DEF left_hip_roll HingeJoint {
+            %{ end }%
+              jointParameters HingeJointParameters {
+                axis 1 -0.000000 0.000000
+                anchor 0.000000 0.000000 0.040000
+                dampingConstant %{= damping_mx106}%
+                staticFriction  %{= friction_mx106}%
+              }
+              device [
+                RotationalMotor {
+                  name "left_hip_roll"
+                  maxTorque       %{= torque_mx106}%
+                  maxVelocity     %{= vel_mx106}%
+                }
+                PositionSensor {
+                  name "left_hip_roll_sensor"
+                  resolution %{= resolution_mx106}%
+                }
+              ]
+              endPoint Solid {
+                translation 0.000000 0.000000 0.040000
+                rotation -0.578024 -0.577013 0.577013 2.093385
+                children [
+                  SAHRV69_mx106_block_2Mesh {
+                  }
+                  %{ if enable_backlash then }%
+                    DEF left_hip_pitch HingeJointWithBacklash {
+                      gearMass 0.001
+                      backlash %{= backlash_mx106 }%
+                  %{ else }%
+                    DEF left_hip_pitch HingeJoint {
+                  %{ end }%
+                    jointParameters HingeJointParameters {
+                      axis -1.000000 0.000000 0.000000
+                      anchor 0.000000 0.000000 0.000000
+                      dampingConstant %{= damping_mx106}%
+                      staticFriction  %{= friction_mx106}%
+                    }
+                    device [
+                      RotationalMotor {
+                        # name "left_hip_pitch [hip]"
+                        name "left_hip_pitch"
+                        maxTorque       %{= torque_mx106}%
+                        maxVelocity     %{= vel_mx106}%
+                      }
+                      PositionSensor {
+                        name "left_hip_pitch_sensor"
+                        resolution %{= resolution_mx106}%
+                      }
+                    ]
+                    endPoint Solid {
+                      translation 0.000000 0.000000 0.000000
+                      rotation 0.000000 1.000000 0.000000 1.570796
+                      children [
+                        SAHRV69_left_knee_1Mesh {
+                        }
+                        %{ if enable_backlash then }%
+                          DEF left_knee HingeJointWithBacklash {
+                            gearMass 0.001
+                            backlash %{= backlash_mx106 }%
+                        %{ else }%
+                          DEF left_knee HingeJoint {
+                        %{ end }%
+                          jointParameters HingeJointParameters {
+                            axis 0.000000 -0.000000 -1.000000
+                            anchor -0.000022 -0.141000 -0.029000
+                            dampingConstant %{= damping_mx106}%
+                            staticFriction  %{= friction_mx106}%
+                          }
+                          device [
+                            RotationalMotor {
+                              name "left_knee"
+                              maxTorque       %{= torque_mx106}%
+                              maxVelocity     %{= vel_mx106}%
+                            }
+                            PositionSensor {
+                              name "left_knee_sensor"
+                              resolution %{= resolution_mx106}%
+                            }
+                          ]
+                          endPoint Solid {
+                            translation -0.000022 -0.141000 -0.029000
+                            rotation 1.000000 0.000000 0.000000 3.141593
+                            children [
+                              SAHRV69_tibia_2Mesh {
+                              }
+                              %{ if enable_backlash then }%
+                                DEF left_ankle_pitch HingeJointWithBacklash {
+                                  gearMass 0.001
+                                  backlash %{= backlash_mx106 }%
+                              %{ else }%
+                                DEF left_ankle_pitch HingeJoint {
+                              %{ end }%
+                                jointParameters HingeJointParameters {
+                                  axis 0.000000 0.000000 1.000000
+                                  anchor 0.000000 0.140000 0.000000
+                                  dampingConstant %{= damping_mx106}%
+                                  staticFriction  %{= friction_mx106}%
+                                }
+                                device [
+                                  RotationalMotor {
+                                    name "left_ankle_pitch"
+                                    maxTorque       %{= torque_mx106}%
+                                    maxVelocity     %{= vel_mx106}%
+                                  }
+                                  PositionSensor {
+                                    name "left_ankle_pitch_sensor"
+                                    resolution %{= resolution_mx106}%
+                                  }
+                                ]
+                                endPoint Solid {
+                                  translation 0.000000 0.140000 0.000000
+                                  rotation 1.000000 0.000000 0.000000 3.141593
+                                  children [
+                                    SAHRV69_mx106_block_mir_2Mesh {
+                                    }
+                                    %{ if enable_backlash then }%
+                                      DEF left_ankle_roll HingeJointWithBacklash {
+                                        gearMass 0.001
+                                        backlash %{= backlash_mx106 }%
+                                    %{ else }%
+                                      DEF left_ankle_roll HingeJoint {
+                                    %{ end }%
+                                      jointParameters HingeJointParameters {
+                                        axis 1.000000 0.000000 -0.000000
+                                        anchor 0.008271 0.000000 0.029000
+                                        dampingConstant %{= damping_mx106}%
+                                        staticFriction  %{= friction_mx106}%
+                                      }
+                                      device [
+                                        RotationalMotor {
+                                          name "left_ankle_roll"
+                                          maxTorque       %{= torque_mx106}%
+                                          maxVelocity     %{= vel_mx106}%
+                                        }
+                                        PositionSensor {
+                                          name "left_ankle_roll_sensor"
+                                          resolution %{= resolution_mx106}%
+                                        }
+                                      ]
+                                      endPoint Solid {
+                                        translation 0.008271 0.000000 0.029000
+                                        rotation 0.707107 0.000000 -0.707107 3.141593
+                                        children [
+                                          SAHRV69_left_foot_1Mesh {
+                                          }
+                                          
+                                          Solid {
+                                            translation 0.005500 0.040000 -0.086
+                                            rotation 1 0 0 1.5708
+                                            children [
+                                              SAHRV71_right_foot_1_7_foot_protectionMesh {
+                                              }
+                                            ]
+                                            name "left_foot_1_0_foot_protection [foot]"
+                                            boundingObject Transform {
+                                              translation -0.000000 0.020500 0.010500
+                                              rotation 0.000000 1.000000 0.000000 0.000000
+                                              children [
+                                                Box {
+                                                  size 0.090000 0.065000 0.021000
+                                                }
+                                              ]
+                                            }
+                                            physics Physics {
+                                              density -1
+                                              mass 0.245540
+                                              centerOfMass [ -0.001997 0.016481 0.014896 ]
+                                              inertiaMatrix [
+                                                1.397844e-04 1.002943e-04 1.590171e-04
+                                                -1.027646e-11 -1.617452e-11 -1.411914e-05
+                                              ]
+                                            }
+                                          }
+                                          Solid {
+                                            translation 0.005500 0.060250 -0.006999
+                                            rotation -0.583927 -0.589454 0.558187 4.166319
+                                            children [
+                                              SAHRV69_left_footMesh {
+                                              }
+                                            ]
+                                            name "left_foot [foot]"
+                                          }
+                                          TouchSensor {
+                                            type        "force"                  # {"bumper", "force", "force-3d"}
+                                            translation -0.032500 0.060000 -0.077803
+                                            rotation -1.0 0 0 1.570796 
+                                            lookupTable [-392.266 -8388607 0, 392.266 8388608 0]   # lookup table
+                                            resolution  -1                        # {-1, [0, inf)}
+                                            name        "/left_pressure/pressure_0"
+                                            children [
+                                              DEF left_foot_cleat_front_right Solid {
+                                                name "left_foot_cleat_front_right [foot]"
+                                                rotation -1.0 0 0 1.570796 
+                                                children [
+                                                  SAHRV69_left_foot_cleat_front_rightMesh {
+                                              }
+                                                ]
+                                              }
+                                            ]
+                                            boundingObject Transform {
+                                              translation -0.00 0.000000 -0.008000
+                                              rotation 1.0 0 0 1.570796 
+                                              children [
+                                                Cylinder {
+                                                  radius 0.008
+                                                  height 0.016
+                                                }
+                                              ]
+                                            }
+                                            physics Physics {
+                                              density -1
+                                              mass 0.001078
+                                              centerOfMass [ 0.000000 0.008947 0.000000 ]
+                                              inertiaMatrix [
+                                                3.761200e-08 3.270600e-08 3.761200e-08
+                                                -6.846900e-23 -1.262800e-24 3.036000e-22
+                                              ]
+                                            }
+                                          }
+                                          TouchSensor {
+                                            type        "force"                  # {"bumper", "force", "force-3d"}
+                                            translation 0.043500 0.060000 -0.077803
+                                            rotation -1.0 0 0 1.570796
+                                            lookupTable [-392.266 -8388607 0, 392.266 8388608 0]   # lookup table
+                                            resolution  -1                        # {-1, [0, inf)}
+                                            name        "/left_pressure/pressure_3"
+                                            children [
+                                              DEF left_foot_cleat_front_left Solid {
+                                                children [
+                                                  SAHRV69_left_foot_cleat_front_leftMesh {
+                                                  }
+                                                ]
+                                                name "left_foot_cleat_front_left [foot]"
+                                                rotation -1.0 0 0 1.570796
+                                              }
+                                            ]
+                                            boundingObject Transform {
+                                              translation -0.00 0.000000 -0.008000
+                                              rotation 1.0 0 0 1.570796
+                                              children [
+                                                Cylinder {
+                                                  radius 0.008
+                                                  height 0.016
+                                                }
+                                              ]
+                                            }
+                                            physics Physics {
+                                              density -1
+                                              mass 0.001078
+                                              centerOfMass [ 0.000000 0.008947 -0.000000 ]
+                                              inertiaMatrix [
+                                                3.761200e-08 3.270600e-08 3.761200e-08
+                                                -5.955700e-23 2.226900e-24 -1.247100e-22
+                                              ]
+                                            }
+                                          }
+                                          TouchSensor {
+                                            type        "force"                  # {"bumper", "force", "force-3d"}
+                                            translation -0.032500 0.060000 0.063805
+                                            rotation -1.0 0 0 1.570796
+                                            lookupTable [-392.266 -8388607 0, 392.266 8388608 0]   # lookup table
+                                            resolution  -1                        # {-1, [0, inf)}
+                                            name        "/left_pressure/pressure_1"
+                                            children [
+                                              DEF left_foot_cleat_back_right Solid {
+                                                children [
+                                                  SAHRV69_left_foot_cleat_back_rightMesh {
+                                                  }
+                                                ]
+                                                name "left_foot_cleat_back_right [foot]"
+                                                rotation -1.0 0 0 1.570796
+                                              }
+                                            ]
+                                            boundingObject Transform {
+                                              translation -0.00 0.000000 -0.008000
+                                              rotation 1.0 0 0 1.570796
+                                              children [
+                                                Cylinder {
+                                                  radius 0.008
+                                                  height 0.016
+                                                }
+                                              ]
+                                            }
+                                            physics Physics {
+                                              density -1
+                                              mass 0.001078
+                                              centerOfMass [ -0.000000 0.008947 0.000000 ]
+                                              inertiaMatrix [
+                                                3.761200e-08 3.270600e-08 3.761200e-08
+                                                6.336400e-23 2.158600e-24 2.859900e-22
+                                              ]
+                                            }
+                                          }
+
+                                          TouchSensor {
+                                            type        "force"                  # {"bumper", "force", "force-3d"}
+                                            translation 0.043500 0.060000 0.063805
+                                            rotation -1.0 0 0 1.570796
+                                            lookupTable [-392.266 -8388607 0, 392.266 8388608 0]   # lookup table
+                                            resolution  -1                        # {-1, [0, inf)}
+                                            name        "/left_pressure/pressure_2"
+                                            children [
+                                              DEF left_foot_cleat_back_left Solid {
+                                                children [
+                                                  SAHRV69_left_foot_cleat_back_leftMesh {
+                                                  }
+                                                ]
+                                                name "left_foot_cleat_back_left [foot]"
+                                                rotation -1.0 0 0 1.570796
+                                              }
+                                            ]
+                                            boundingObject Transform {
+                                              translation -0.00 0.000000 -0.008000
+                                              rotation 1.0 0 0 1.570796
+                                              children [
+                                                Cylinder {
+                                                  radius 0.008
+                                                  height 0.016
+                                                }
+                                              ]
+                                            }
+                                            physics Physics {
+                                              density -1
+                                              mass 0.001078
+                                              centerOfMass [ -0.000000 0.008947 0.000000 ]
+                                              inertiaMatrix [
+                                                3.761200e-08 3.270600e-08 3.761200e-08
+                                                -3.986700e-22 2.018200e-24 2.909500e-22
+                                              ]
+                                            }
+                                          }
+                                          Solid {
+                                            translation 0.000000 0.000000 0.032896
+                                            rotation -0.577350 -0.577350 0.577350 2.094395
+                                            children [
+                                              SAHRV69_left_foot_bone_backMesh {
+                                              }
+                                            ]
+                                            name "left_foot_bone_back [foot]"
+                                            boundingObject Transform {
+                                              translation 0.016230 0.002725 0.000000
+                                              rotation 0.000000 1.000000 0.000000 0.000000
+                                              children [
+                                                Box {
+                                                  size 0.047550 0.003000 0.030000
+                                                }
+                                              ]
+                                            }
+                                            physics Physics {
+                                              density -1
+                                              mass 0.004639
+                                              centerOfMass [ 0.019897 0.002479 0.000000 ]
+                                              inertiaMatrix [
+                                                3.607061e-07 1.030680e-06 6.756077e-07
+                                                -7.187226e-09 5.660389e-13 4.324619e-16
+                                              ]
+                                            }
+                                          }
+                                          Solid {
+                                            translation 0.000000 0.000000 -0.023444
+                                            rotation -0.577351 -0.577351 0.577349 2.094397
+                                            children [
+                                              SAHRV69_left_foot_bone_frontMesh {
+                                              }
+                                            ]
+                                            name "left_foot_bone_front [foot]"
+                                            boundingObject Transform {
+                                              translation 0.015005 -0.000275 -0.000000
+                                              rotation 0.000000 1.000000 0.000000 0.000000
+                                              children [
+                                                Box {
+                                                  size 0.050000 0.003000 0.030000
+                                                }
+                                              ]
+                                            }
+                                            physics Physics {
+                                              density -1
+                                              mass 0.005641
+                                              centerOfMass [ 0.017355 -0.000232 0.000000 ]
+                                              inertiaMatrix [
+                                                4.320520e-07 1.338966e-06 9.151917e-07
+                                                -4.804138e-09 4.374171e-12 1.389117e-12
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                        name "left_foot_1 [foot]"
+                                        boundingObject Transform {
+                                          translation 0.005500 0.033500 -0.006999
+                                          rotation 0.000000 1.000000 0.000000 0.000000
+                                          children [
+                                            Box {
+                                              size 0.092000 0.019000 0.157609
+                                            }
+                                          ]
+                                        }
+                                        physics Physics {
+                                          density -1
+                                          mass 0.197905
+                                          centerOfMass [ 0.005102 0.036791 0.003379 ]
+                                          inertiaMatrix [
+                                            3.693502e-04 4.561848e-04 8.985304e-05
+                                            -4.136806e-07 1.093774e-05 4.359026e-07
+                                          ]
+                                        }
+                                      }
+                                    }
+                                    Solid {
+                                      translation 0.000000 0.000000 0.009500
+                                      rotation 0.000000 0.000000 1.000000 1.570796
+                                      children [
+                                        SAHRV69_joint_block03Mesh {
+                                        }
+                                        Solid {
+                                          translation 0.000000 0.000000 -0.000600
+                                          rotation 0.577350 -0.577350 0.577350 2.094395
+                                          children [
+                                            SAHRV69_dubel03Mesh {
+                                            }
+                                          ]
+                                          name "dubel03"
+                                          boundingObject Transform {
+                                            translation 0.020100 -0.018050 -0.047900
+                                            rotation 0.000000 1.000000 0.000000 0.000000
+                                            children [
+                                              Box {
+                                                size 0.040200 0.065100 0.049000
+                                              }
+                                            ]
+                                          }
+                                          physics Physics {
+                                            density -1
+                                            mass 0.159507
+                                            centerOfMass [ 0.020104 -0.015778 -0.048989 ]
+                                            inertiaMatrix [
+                                              7.602558e-05 4.229576e-05 6.034857e-05
+                                              -3.068580e-09 4.247805e-09 -1.841894e-06
+                                            ]
+                                          }
+                                        }
+                                      ]
+                                      name "joint_block03"
+                                      boundingObject Transform {
+                                        translation 0.032500 0.023550 0.019500
+                                        rotation 0.000000 1.000000 0.000000 0.000000
+                                        children [
+                                          Box {
+                                            size 0.036000 0.017700 0.039000
+                                          }
+                                        ]
+                                      }
+                                      physics Physics {
+                                        density -1
+                                        mass 0.014404
+                                        centerOfMass [ 0.033694 0.023894 0.019497 ]
+                                        inertiaMatrix [
+                                          2.951288e-06 4.145151e-06 1.362015e-06
+                                          8.654080e-09 -1.349458e-10 1.370066e-10
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                  name "mx106_block_mir_2"
+                                  boundingObject Transform {
+                                    translation 0.004920 0.018050 0.027500
+                                    rotation 0.000000 1.000000 0.000000 0.000000
+                                    children [
+                                      Box {
+                                        size 0.050040 0.065100 0.049000
+                                      }
+                                    ]
+                                  }
+                                  physics Physics {
+                                    density -1
+                                    mass 0.173092
+                                    centerOfMass [ 0.001897 0.014587 0.028621 ]
+                                    inertiaMatrix [
+                                      7.865863e-05 4.405545e-05 6.132583e-05
+                                      2.747330e-08 -4.239819e-09 -1.841894e-06
+                                    ]
+                                  }
+                                }
+                              }
+                              Solid {
+                                translation -0.001414 0.035050 -0.003000
+                                rotation -1.000000 0.000000 0.000000 3.141593
+                                children [
+                                  SAHRV69_tibia_21Mesh {
+                                  }
+                                  Solid {
+                                    translation 0.004916 -0.056985 -0.004000
+                                    rotation -0.049421 -0.998778 0.000000 3.141593
+                                    children [
+                                      SAHRV69_left_shin_panelMesh {
+                                        %{if jerseyColor == "red" then}%
+                                          color IS RED
+                                        %{end}%
+                                        %{if jerseyColor == "blue" then}%
+                                          color IS BLUE
+                                        %{end}%
+                                      }
+                                    ]
+                                    name "left_shin_panel"
+                                    boundingObject Transform {
+                                      translation 0.000000 0.000000 -0.002500
+                                      rotation 0.000000 1.000000 0.000000 0.000000
+                                      children [
+                                        Box {
+                                          size 0.052303 0.065000 0.007000
+                                        }
+                                      ]
+                                    }
+                                    physics Physics {
+                                      density -1
+                                      mass 0.007135
+                                      centerOfMass [ -0.000000 -0.000401 -0.000397 ]
+                                      inertiaMatrix [
+                                        2.345100e-06 1.554300e-06 3.873900e-06
+                                        9.549300e-16 -7.354300e-16 1.002900e-09
+                                      ]
+                                    }
+                                  }
+                                ]
+                                name "tibia_21"
+                                # boundingObject Transform {
+                                #   translation 0.007211 -0.034950 -0.001500
+                                #   rotation 0.000000 1.000000 0.000000 0.000000
+                                #   children [
+                                #     Box {
+                                #       size 0.051593 0.172009 0.003000
+                                #     }
+                                #   ]
+                                # }
+                                boundingObject Group {
+                                  children [
+                                    Transform {
+                                      translation 0.007211 0.02 -0.001500
+                                      rotation 0.000000 0.000000 1.000000 0.3  
+                                      children [
+                                        Box {
+                                          size 0.04 0.06 0.003000
+                                        }
+                                      ]
+                                    }
+                                    Transform {
+                                    translation 0.007211 -0.055 -0.001500
+                                    rotation 0.000000 0.000000 1.000000 -0.15
+                                    children [
+                                      Box {
+                                        size 0.04 0.1 0.003000
+                                      }
+                                    ]
+                                  }
+                                    # Transform {
+                                    #   translation  0.001 -0.102 -0.001500
+                                    #   rotation 1.000000 0.000000 0.000000 1.570796
+                                    #   children [
+                                    #     Cylinder {
+                                    #       radius 0.02
+                                    #       height 0.003
+                                    #     }
+                                    #   ]
+                                    # }
+                                  ]
+                                }
+                                physics Physics {
+                                  density -1
+                                  mass 0.024844
+                                  centerOfMass [ 0.005114 -0.034363 -0.001500 ]
+                                  inertiaMatrix [
+                                    5.800814e-05 4.063772e-06 6.203465e-05
+                                    -1.245392e-06 1.245521e-21 -8.414267e-21
+                                  ]
+                                }
+                              }
+                              Solid {
+                                translation 0.021920 0.058385 -0.055000
+                                rotation -0.573982 -0.579027 0.579028 2.099454
+                                children [
+                                  SAHRV69_tibia_22Mesh {
+                                  }
+                                ]
+                                name "tibia_22"
+
+                                boundingObject Group {
+                                children [
+                                  
+                                  Transform {
+                                    translation -0.043 0.001500 0.016456
+                                    rotation 0.000000 1.000000 0.000000 0.3
+                                    children [
+                                      Box {
+                                        size 0.06 0.003000 0.04
+                                      }
+                                    ]
+                                  }
+                                  Transform {
+                                    translation 0.033 0.001500 0.016456
+                                    rotation 0.000000 1.000000 0.000000 -0.15
+                                    children [
+                                      Box {
+                                        size 0.1 0.003000 0.04
+                                      }
+                                    ]
+                                  }
+                                  # Transform {
+                                  #   translation 0.078 0.001500 0.021
+                                  #   rotation 0.000000 1.000000 0.000000 1.570796
+                                  #   children [
+                                  #     Cylinder {
+                                  #       radius 0.02
+                                  #       height 0.003
+                                  #       }
+                                  #     ]
+                                  #   }
+                                  ]
+                                }
+
+                                physics Physics {
+                                  density -1
+                                  mass 0.024844
+                                  centerOfMass [ 0.011187 0.001500 0.018123 ]
+                                  inertiaMatrix [
+                                    4.046108e-06 6.203465e-05 5.802581e-05
+                                    3.313928e-20 -7.731813e-07 1.628570e-19
+                                  ]
+                                }
+                              }
+                            ]
+                            name "tibia_2"
+                            boundingObject Transform {
+                              translation 0.008485 0.048485 -0.029000
+                              rotation 0.000000 1.000000 0.000000 0.000000
+                              children [
+                                Box {
+                                  size 0.026870 0.026870 0.052000
+                                }
+                              ]
+                            }
+                            physics Physics {
+                              density -1
+                              mass 0.012466
+                              centerOfMass [ 0.008485 0.048485 -0.029000 ]
+                              inertiaMatrix [
+                                4.141024e-06 4.141024e-06 1.490545e-06
+                                -7.185554e-07 -4.143752e-12 1.123388e-12
+                              ]
+                            }
+                          }
+                        }
+                        Solid {
+                          translation -0.000022 -0.055000 -0.030000
+                          rotation 0.000000 1.000000 0.000000 3.141593
+                          children [
+                            SAHRV69_left_knee_bone_1Mesh {
+                            }
+                            Solid {
+                              translation 0.000000 0.000000 0.000000
+                              rotation 0.000000 1.000000 0.000000 0.000000
+                              children [
+                                SAHRV69_left_hip_panelMesh {
+                                  %{if jerseyColor == "red" then}%
+                                    color IS RED
+                                  %{end}%
+                                  %{if jerseyColor == "blue" then}%
+                                    color IS BLUE
+                                  %{end}%
+                                }
+                              ]
+                              name "left_hip_panel"
+                              # boundingObject Transform {
+                              #   translation 0.000000 0.000000 -0.002500
+                              #   rotation 0.000000 1.000000 0.000000 0.000000
+                              #   children [
+                              #     Box {
+                              #       size 0.058000 0.070000 0.007000
+                              #     }
+                              #   ]
+                              # }
+                              physics Physics {
+                                density -1
+                                mass 0.008452
+                                centerOfMass [ -0.000000 -0.000000 -0.000328 ]
+                                inertiaMatrix [
+                                  3.259300e-06 2.289400e-06 5.522400e-06
+                                  -9.994900e-16 2.144200e-21 -7.793500e-22
+                                ]
+                              }
+                            }
+                          ]
+                          name "left_knee_bone_1"
+                          boundingObject Transform {
+                            translation 0.000000 0.009439 -0.002500
+                            rotation 0.000000 1.000000 0.000000 0.000000
+                            children [
+                              Box {
+                                size 0.044000 0.118878 0.003000
+                              }
+                            ]
+                          }
+                          physics Physics {
+                            density -1
+                            mass 0.016935
+                            centerOfMass [ -0.000000 0.004535 -0.002500 ]
+                            inertiaMatrix [
+                              2.049741e-05 2.918984e-06 2.339099e-05
+                              5.883325e-21 1.946918e-21 9.866665e-21
+                            ]
+                          }
+                        }
+                        Solid {
+                          translation -0.000022 -0.128000 0.026000
+                          rotation -0.577350 -0.577350 0.577350 2.094395
+                          children [
+                            SAHRV69_left_knee_bone_2Mesh {
+                            }
+                          ]
+                          name "left_knee_bone_2"
+                          boundingObject Transform {
+                            translation 0.082439 -0.001500 0.000000
+                            rotation 0.000000 1.000000 0.000000 0.000000
+                            children [
+                              Box {
+                                size 0.118878 0.003000 0.044000
+                              }
+                            ]
+                          }
+                          physics Physics {
+                            density -1
+                            mass 0.016935
+                            centerOfMass [ 0.077535 -0.001500 0.000000 ]
+                            inertiaMatrix [
+                              2.918984e-06 2.339099e-05 2.049741e-05
+                              1.296383e-21 -7.377452e-21 -4.523817e-12
+                            ]
+                          }
+                        }
+                      ]
+                      name "left_knee_1"
+                      boundingObject Transform {
+                        translation -0.000022 -0.121950 0.000000
+                        rotation 0.000000 1.000000 0.000000 0.000000
+                        children [
+                          Box {
+                            size 0.049000 0.067100 0.050000
+                          }
+                        ]
+                      }
+                      physics Physics {
+                        density -1
+                        mass 0.185809
+                        centerOfMass [ -0.000019 -0.121892 0.000070 ]
+                        inertiaMatrix [
+                          7.705682e-05 4.823411e-05 6.693444e-05
+                          3.071459e-09 -4.231979e-09 -1.841894e-06
+                        ]
+                      }
+                    }
+                  }
+                  Solid {
+                    translation 0.000000 0.000000 0.014722
+                    rotation -0.577350 0.577350 -0.577351 2.094394
+                    children [
+                      SAHRV69_joint_block01Mesh {
+                      }
+                      Solid {
+                        translation 0.000000 -0.008700 0.000000
+                        rotation 0.577350 -0.577350 0.577350 2.094395
+                        children [
+                          SAHRV69_dubel01Mesh {
+                          }
+                        ]
+                        name "dubel01"
+                        boundingObject Transform {
+                          translation 0.000000 -0.018050 0.024500
+                          rotation 0.000000 1.000000 0.000000 0.000000
+                          children [
+                            Box {
+                              size 0.040200 0.065100 0.049000
+                            }
+                          ]
+                        }
+                        physics Physics {
+                          density -1
+                          mass 0.159507
+                          centerOfMass [ -0.000004 -0.015778 0.025589 ]
+                          inertiaMatrix [
+                            7.602558e-05 4.229576e-05 6.034857e-05
+                            3.068580e-09 4.247805e-09 1.841894e-06
+                          ]
+                        }
+                      }
+                    ]
+                    name "joint_block01"
+                    boundingObject Transform {
+                      translation 0.032500 -0.008850 0.000000
+                      rotation 0.000000 1.000000 0.000000 0.000000
+                      children [
+                        Box {
+                          size 0.036000 0.017700 0.039000
+                        }
+                      ]
+                    }
+                    physics Physics {
+                      density -1
+                      mass 0.014404
+                      centerOfMass [ 0.033694 -0.009194 0.000003 ]
+                      inertiaMatrix [
+                        2.951288e-06 4.145151e-06 1.362015e-06
+                        -8.654061e-09 1.349344e-10 1.370113e-10
+                      ]
+                    }
+                  }
+                ]
+                name "mx106_block_2"
+                boundingObject Transform {
+                  translation -0.000000 -0.018050 -0.004898
+                  rotation 0.000000 1.000000 0.000000 0.000000
+                  children [
+                    Box {
+                      size 0.052000 0.065100 0.050040
+                    }
+                  ]
+                }
+                physics Physics {
+                  density -1
+                  mass 0.176283
+                  centerOfMass [ 0.000074 -0.014323 -0.001834 ]
+                  inertiaMatrix [
+                    6.169003e-05 4.423969e-05 7.884286e-05
+                    1.841893e-06 -4.266636e-09 2.133902e-08
+                  ]
+                }
+              }
+            }
+          ]
+          name "u_block_2"
+          boundingObject Transform {
+            translation 0.004722 0.000000 0.008000
+            rotation 0.000000 1.000000 0.000000 0.000000
+            children [
+              Box {
+                size 0.056444 0.030000 0.006000
+              }
+            ]
+          }
+          physics Physics {
+            density -1
+            mass 0.017510
+            centerOfMass [ 0.004374 -0.000008 0.007365 ]
+            inertiaMatrix [
+              3.135662e-06 4.771173e-06 7.793656e-06
+              2.859586e-09 -9.785036e-09 1.719398e-11
+            ]
+          }
+        }
+      }
+      %{ if enable_backlash then }%
+        DEF right_hip_yaw HingeJointWithBacklash {
+          gearMass 0.001
+          backlash %{= backlash_mx106 }%
+      %{ else }%
+        DEF right_hip_yaw HingeJoint {
+      %{ end }%
+        jointParameters HingeJointParameters {
+          axis -0.000000 -0.000000 1.000000
+          anchor 0.004283 0.014615 -0.008900
+          dampingConstant %{= damping_mx106}%
+          staticFriction  %{= friction_mx106}%
+        }
+        device [
+          RotationalMotor {
+            name "right_hip_yaw"
+            maxTorque       %{= torque_mx106}%
+            maxVelocity     %{= vel_mx106}%
+          }
+          PositionSensor {
+            name "right_hip_yaw_sensor"
+            resolution %{= resolution_mx106}%
+          }
+        ]
+        endPoint Solid {
+          translation 0.004283 0.014615 -0.008900
+          rotation 0.707107 -0.707107 -0.000000 3.141593
+          children [
+            SAHRV69_u_block_1Mesh {
+            }
+            Solid {
+              translation 0.032918 0.000000 0.037000
+              rotation 0.577350 0.577351 -0.577350 2.094394
+              children [
+                SAHRV69_u_block_1_bone1Mesh {
+                }
+              ]
+              name "u_block_1_bone1"
+              boundingObject Transform {
+                translation 0.008725 0.001500 -0.000000
+                rotation 0.000000 1.000000 0.000000 0.000000
+                children [
+                  Box {
+                    size 0.044550 0.003000 0.030000
+                  }
+                ]
+              }
+              physics Physics {
+                density -1
+                mass 0.005121
+                centerOfMass [ 0.011155 0.001454 0.000000 ]
+                inertiaMatrix [
+                  3.925086e-07 1.040646e-06 6.556397e-07
+                  4.042085e-09 -4.851645e-13 -1.180276e-12
+                ]
+              }
+            }
+            Solid {
+              translation -0.023385 0.000000 0.037000
+              rotation 0.577351 0.577350 -0.577351 2.094396
+              children [
+                SAHRV69_u_block_1_bone2Mesh {
+                }
+              ]
+              name "u_block_1_bone2"
+              boundingObject Transform {
+                translation 0.008725 -0.001500 0.000000
+                rotation 0.000000 1.000000 0.000000 0.000000
+                children [
+                  Box {
+                    size 0.044550 0.003000 0.030000
+                  }
+                ]
+              }
+              physics Physics {
+                density -1
+                mass 0.005121
+                centerOfMass [ 0.011155 -0.001454 -0.000000 ]
+                inertiaMatrix [
+                  3.925086e-07 1.040646e-06 6.556397e-07
+                  -4.042085e-09 4.725258e-13 2.355991e-14
+                ]
+              }
+            }
+            %{ if enable_backlash then }%
+              DEF right_hip_roll HingeJointWithBacklash {
+                gearMass 0.001
+                backlash %{= backlash_mx106 }%
+            %{ else }%
+              DEF right_hip_roll HingeJoint {
+            %{ end }%
+              jointParameters HingeJointParameters {
+                axis 1.000000 0.000000 0.000000
+                anchor 0.000000 0.000000 0.040000
+                dampingConstant %{= damping_mx106}%
+                staticFriction  %{= friction_mx106}%
+              }
+              device [
+                RotationalMotor {
+                  name "right_hip_roll"
+                  maxTorque       %{= torque_mx106}%
+                  maxVelocity     %{= vel_mx106}%
+                }
+                PositionSensor {
+                  name "right_hip_roll_sensor"
+                  resolution %{= resolution_mx106}%
+                }
+              ]
+              endPoint Solid {
+                translation 0.000000 0.000000 0.040000
+                rotation -0.577351 0.577350 -0.577350 2.094394
+                children [
+                  SAHRV69_mx106_block_mir_1Mesh {
+                  }
+                  %{ if enable_backlash then }%
+                    DEF right_hip_pitch HingeJointWithBacklash {
+                      gearMass 0.001
+                      backlash %{= backlash_mx106 }%
+                  %{ else }%
+                    DEF right_hip_pitch HingeJoint {
+                  %{ end }%
+                    jointParameters HingeJointParameters {
+                      axis 1.000000 0.000000 -0.000000
+                      anchor -0.029000 0.000000 -0.000022
+                      dampingConstant %{= damping_mx106}%
+                      staticFriction  %{= friction_mx106}%
+                    }
+                    device [
+                      RotationalMotor {
+                        # name "right_hip_pitch [hip]"
+                        name "right_hip_pitch"
+                        maxTorque       %{= torque_mx106}%
+                        maxVelocity     %{= vel_mx106}%
+                      }
+                      PositionSensor {
+                        name "right_hip_pitch_sensor"
+                        resolution %{= resolution_mx106}%
+                      }
+                    ]
+                    endPoint Solid {
+                      translation -0.029000 0.000000 -0.000022
+                      rotation 0.000000 1.000000 0.000000 1.570796
+                      children [
+                        SAHRV69_right_knee_1Mesh {
+                        }
+                        %{ if enable_backlash then }%
+                          DEF right_knee HingeJointWithBacklash {
+                            gearMass 0.001
+                            backlash %{= backlash_mx106 }%
+                        %{ else }%
+                          DEF right_knee HingeJoint {
+                        %{ end }%
+                          jointParameters HingeJointParameters {
+                            axis 0.000000 0.000000 1.000000
+                            anchor 0.000000 -0.141000 0.055000
+                            dampingConstant %{= damping_mx106}%
+                            staticFriction  %{= friction_mx106}%
+                          }
+                          device [
+                            RotationalMotor {
+                              name "right_knee"
+                              maxTorque       %{= torque_mx106}%
+                              maxVelocity     %{= vel_mx106}%
+                            }
+                            PositionSensor {
+                              name "right_knee_sensor"
+                              resolution %{= resolution_mx106}%
+                            }
+                          ]
+                          endPoint Solid {
+                            translation 0.000000 -0.141000 0.055000
+                            rotation 0.000000 0.000000 1.000000 3.141593
+                            children [
+                              SAHRV69_tibia_1Mesh {
+                              }
+                              %{ if enable_backlash then }%
+                                DEF right_ankle_pitch HingeJointWithBacklash {
+                                  gearMass 0.001
+                                  backlash %{= backlash_mx106 }%
+                              %{ else }%
+                                DEF right_ankle_pitch HingeJoint {
+                              %{ end }%
+                                jointParameters HingeJointParameters {
+                                  axis 0.000000 -0.000000 1.000000
+                                  anchor 0.000000 0.140000 -0.026000
+                                  dampingConstant %{= damping_mx106}%
+                                  staticFriction  %{= friction_mx106}%
+                                }
+                                device [
+                                  RotationalMotor {
+                                    name "right_ankle_pitch"
+                                    maxTorque       %{= torque_mx106}%
+                                    maxVelocity     %{= vel_mx106}%
+                                  }
+                                  PositionSensor {
+                                    name "right_ankle_pitch_sensor"
+                                    resolution %{= resolution_mx106}%
+                                  }
+                                ]
+                                endPoint Solid {
+                                  translation 0.000000 0.140000 -0.026000
+                                  rotation 0.000000 0.000000 -1.000000 3.141593
+                                  children [
+                                    SAHRV69_mx106_block_1Mesh {
+                                    }
+                                    %{ if enable_backlash then }%
+                                      DEF right_ankle_roll HingeJointWithBacklash {
+                                        gearMass 0.001
+                                        backlash %{= backlash_mx106 }%
+                                    %{ else }%
+                                      DEF right_ankle_roll HingeJoint {
+                                    %{ end }%
+                                      jointParameters HingeJointParameters {
+                                        axis -1.000000 0.000000 0.000000
+                                        anchor -0.006301 0.000000 0.000000
+                                        dampingConstant %{= damping_mx106}%
+                                        staticFriction  %{= friction_mx106}%
+                                      }
+                                      device [
+                                        RotationalMotor {
+                                          name "right_ankle_roll"
+                                          maxTorque       %{= torque_mx106}%
+                                          maxVelocity     %{= vel_mx106}%
+                                        }
+                                        PositionSensor {
+                                          name "right_ankle_roll_sensor"
+                                          resolution %{= resolution_mx106}%
+                                        }
+                                      ]
+                                      endPoint Solid {
+                                        translation -0.006301 0.000000 0.000000
+                                        rotation 0.000000 1.000000 -0.000000 1.570796
+                                        children [
+                                          SAHRV69_right_foot_1Mesh {
+                                          }
+
+                                          TouchSensor {
+                                            type        "force"                  # {"bumper", "force", "force-3d"}
+                                            translation -0.032500 -0.060000 -0.079773
+                                            rotation 1.0 0 0 1.570796
+                                            lookupTable [-392.266 -8388607 0, 392.266 8388608 0]    # lookup table
+                                            resolution  -1                        # {-1, [0, inf)}
+                                            name        "/right_pressure/pressure_3"
+                                            children [
+                                              DEF right_foot_clear_front_left Solid {
+                                                name "right_foot_cleat_front_left [foot]"
+                                                rotation -1.0 0 0 1.570796
+                                                children [
+                                                  SAHRV69_right_foot_cleat_front_leftMesh {
+                                              }
+                                                ]
+                                              }
+                                            ]
+                                            boundingObject Transform {
+                                              translation -0.00 0.000000 -0.008000
+                                              rotation 1.0 0 0 1.570796
+                                              children [
+                                                Cylinder {
+                                                  radius 0.008
+                                                  height 0.016
+                                                }
+                                              ]
+                                            }
+                                            physics Physics {
+                                              density -1
+                                              mass 0.001078
+                                              centerOfMass [ 0.000000 0.008947 0.000000 ]
+                                              inertiaMatrix [
+                                                3.761200e-08 3.270600e-08 3.761200e-08
+                                                -6.205300e-23 1.606600e-24 8.165100e-24
+                                              ]
+                                            }
+                                          }
+                                          TouchSensor {
+                                            type        "force"                  # {"bumper", "force", "force-3d"}
+                                            translation -0.032500 -0.060000 0.061836
+                                            rotation 1.0 0 0 1.570796
+                                            lookupTable [-392.266 -8388607 0, 392.266 8388608 0]    # lookup table
+                                            resolution  -1                        # {-1, [0, inf)}
+                                            name        "/right_pressure/pressure_2"
+                                            children [
+                                              DEF right_foot_cleat_back_left Solid {
+                                                name "right_foot_cleat_back_left [foot]"
+                                                rotation -1.0 0 0 1.570796
+                                                children [
+                                                  SAHRV69_right_foot_cleat_back_leftMesh {
+                                              }
+                                                ]
+                                              }
+                                            ]
+                                            boundingObject Transform {
+                                              translation -0.00 0.000000 -0.008000
+                                              rotation 1.0 0 0 1.570796
+                                              children [
+                                                Cylinder {
+                                                  radius 0.008
+                                                  height 0.016
+                                                }
+                                              ]
+                                            }
+                                            physics Physics {
+                                              density -1
+                                              mass 0.001078
+                                              centerOfMass [ -0.000000 0.008947 0.000000 ]
+                                              inertiaMatrix [
+                                                3.761200e-08 3.270600e-08 3.761200e-08
+                                                3.930400e-23 -2.714100e-25 2.783900e-22
+                                              ]
+                                            }
+                                          }
+                                          TouchSensor {
+                                            type        "force"                  # {"bumper", "force", "force-3d"}
+                                            translation 0.043500 -0.060000 0.061836
+                                            rotation 1.0 0 0 1.570796
+                                            lookupTable [-392.266 -8388607 0, 392.266 8388608 0]    # lookup table
+                                            resolution  -1                        # {-1, [0, inf)}
+                                            name        "/right_pressure/pressure_1"
+                                            children [
+                                              DEF right_foot_cleat_back_right Solid {
+                                                name "right_foot_cleat_back_right [foot]"
+                                                rotation -1.0 0 0 1.570796
+                                                children [
+                                                  SAHRV69_right_foot_cleat_back_rightMesh {
+                                              }
+                                                ]
+                                              }
+                                            ]
+                                            boundingObject Transform {
+                                              translation -0.00 0.000000 -0.008000
+                                              rotation 1.0 0 0 1.570796
+                                              children [
+                                                Cylinder {
+                                                  radius 0.008
+                                                  height 0.016
+                                                }
+                                              ]
+                                            }
+                                            physics Physics {
+                                              density -1
+                                              mass 0.001078
+                                              centerOfMass [ -0.000000 0.008947 0.000000 ]
+                                              inertiaMatrix [
+                                                3.761200e-08 3.270600e-08 3.761200e-08
+                                                -3.681100e-22 1.746900e-24 2.852000e-22
+                                              ]
+                                            }
+                                          }
+                                          TouchSensor {
+                                            type        "force"                  # {"bumper", "force", "force-3d"}
+                                            translation 0.043500 -0.060000 -0.079773
+                                            rotation 1.0 0 0 1.570796
+                                            lookupTable [-392.266 -8388607 0, 392.266 8388608 0]    # lookup table
+                                            resolution  -1                        # {-1, [0, inf)}
+                                            name        "/right_pressure/pressure_0"
+                                            children [
+                                              DEF right_foot_cleat_front_right Solid {
+                                                name "right_foot_cleat_front_right [foot]" 
+                                                rotation -1.0 0 0 1.570796
+                                                children [
+                                                  SAHRV69_right_foot_cleat_front_rightMesh {
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                            boundingObject Transform {
+                                              translation -0.00 0.000000 -0.008000
+                                              rotation 1.0 0 0 1.570796
+                                              children [
+                                                Cylinder {
+                                                  radius 0.008
+                                                  height 0.016
+                                                }
+                                              ]
+                                            }
+                                            physics Physics {
+                                              density -1
+                                              mass 0.001078
+                                              centerOfMass [ 0.000000 0.008947 0.000000 ]
+                                              inertiaMatrix [
+                                                3.761200e-08 3.270600e-08 3.761200e-08
+                                                -6.645000e-23 -5.130200e-27 9.651500e-25
+                                              ]
+                                            }
+                                          }
+                                          Solid {
+                                            translation 0.005500 -0.060250 -0.008969
+                                            rotation 0.556006 -0.609901 -0.564693 4.145639
+                                            children [
+                                              SAHRV69_right_footMesh {
+                                              }
+                                            ]
+                                            name "right_foot [foot]"
+                                          }
+                                          Solid {
+                                            translation 0.005500 -0.040000 -0.087773
+                                            rotation 0.000000 0.707107 0.707107 3.141593
+                                            children [
+                                              SAHRV71_right_foot_1_7_foot_protectionMesh {
+                                              }
+                                            ]
+                                            name "right_foot_1_7_foot_protection [foot]"
+                                            boundingObject Transform {
+                                              translation -0.000000 0.020500 0.010500
+                                              rotation 0.000000 1.000000 0.000000 0.000000
+                                              children [
+                                                Box {
+                                                  size 0.090000 0.065000 0.021000
+                                                }
+                                              ]
+                                            }
+                                            physics Physics {
+                                              density -1
+                                              mass 0.245540
+                                              centerOfMass [ -0.001997 0.016481 0.014896 ]
+                                              inertiaMatrix [
+                                                1.397844e-04 1.002943e-04 1.590171e-04
+                                                -1.027646e-11 -1.617452e-11 -1.411914e-05
+                                              ]
+                                            }
+                                          } 
+                                          Solid {
+                                            translation 0.009500 0.000000 0.007504
+                                            rotation -0.577350 0.577350 -0.577350 2.094395
+                                            children [
+                                              SAHRV69_right_foot_bone_backMesh {
+                                              }
+                                            ]
+                                            name "right_foot_bone_back [foot]"
+                                            boundingObject Transform {
+                                              translation 0.016230 -0.020697 -0.009500
+                                              rotation 0.000000 1.000000 0.000000 0.000000
+                                              children [
+                                                Box {
+                                                  size 0.047550 0.003000 0.030000
+                                                }
+                                              ]
+                                            }
+                                            physics Physics {
+                                              density -1
+                                              mass 0.004639
+                                              centerOfMass [ 0.019897 -0.020943 -0.009500 ]
+                                              inertiaMatrix [
+                                                3.607061e-07 1.030680e-06 6.756077e-07
+                                                -7.187226e-09 5.660389e-13 4.324620e-16
+                                              ]
+                                            }
+                                          }
+                                          Solid {
+                                            translation 0.000000 0.000000 -0.025436
+                                            rotation -0.577351 0.577351 -0.577349 2.094397
+                                            children [
+                                              SAHRV69_right_foot_bone_frontMesh {
+                                              }
+                                            ]
+                                            name "right_foot_bone_front [foot]"
+                                            boundingObject Transform {
+                                              translation 0.015005 -0.000297 -0.000000
+                                              rotation 0.000000 1.000000 0.000000 0.000000
+                                              children [
+                                                Box {
+                                                  size 0.050000 0.003000 0.030000
+                                                }
+                                              ]
+                                            }
+                                            physics Physics {
+                                              density -1
+                                              mass 0.005641
+                                              centerOfMass [ 0.017355 -0.000254 0.000000 ]
+                                              inertiaMatrix [
+                                                4.320520e-07 1.338966e-06 9.151917e-07
+                                                -4.804138e-09 4.374171e-12 1.389117e-12
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                        name "right_foot_1 [foot]"
+                                        boundingObject Transform {
+                                          translation 0.005500 -0.033500 -0.008969
+                                          rotation 0.000000 1.000000 0.000000 0.000000
+                                          children [
+                                            Box {
+                                              size 0.092000 0.019000 0.157609
+                                            }
+                                          ]
+                                        }
+                                        physics Physics {
+                                          density -1
+                                          mass 0.197905
+                                          centerOfMass [ 0.005102 -0.036791 0.001409 ]
+                                          inertiaMatrix [
+                                            3.693502e-04 4.561848e-04 8.985307e-05
+                                            4.136930e-07 1.093773e-05 -4.359002e-07
+                                          ]
+                                        }
+                                      }
+                                    }
+                                    Solid {
+                                      translation 0.000000 0.000000 -0.019500
+                                      rotation 0.000000 0.000000 1.000000 1.570796
+                                      children [
+                                        SAHRV69_joint_block04Mesh {
+                                        }
+                                        Solid {
+                                          translation 0.036000 -0.049400 0.019500
+                                          rotation 0.577350 0.577350 -0.577350 2.094395
+                                          children [
+                                            SAHRV69_dubel04Mesh {
+                                            }
+                                          ]
+                                          name "dubel04"
+                                          boundingObject Transform {
+                                            translation 0.000000 -0.017950 -0.001500
+                                            rotation 0.000000 1.000000 0.000000 0.000000
+                                            children [
+                                              Box {
+                                                size 0.040200 0.065100 0.049000
+                                              }
+                                            ]
+                                          }
+                                          physics Physics {
+                                            density -1
+                                            mass 0.159507
+                                            centerOfMass [ 0.000004 -0.020222 -0.000411 ]
+                                            inertiaMatrix [
+                                              7.602558e-05 4.229576e-05 6.034857e-05
+                                              3.068579e-09 -4.247805e-09 -1.841893e-06
+                                            ]
+                                          }
+                                        }
+                                      ]
+                                      name "joint_block04"
+                                      boundingObject Transform {
+                                        translation 0.032500 -0.023550 0.019500
+                                        rotation 0.000000 1.000000 0.000000 0.000000
+                                        children [
+                                          Box {
+                                            size 0.036000 0.017700 0.039000
+                                          }
+                                        ]
+                                      }
+                                      physics Physics {
+                                        density -1
+                                        mass 0.014404
+                                        centerOfMass [ 0.033694 -0.023894 0.019503 ]
+                                        inertiaMatrix [
+                                          2.951288e-06 4.145151e-06 1.362015e-06
+                                          -8.654096e-09 1.349458e-10 1.370066e-10
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                  name "mx106_block_1"
+                                  boundingObject Transform {
+                                    translation -0.004920 0.018050 -0.001500
+                                    rotation 0.000000 1.000000 0.000000 0.000000
+                                    children [
+                                      Box {
+                                        size 0.050040 0.065100 0.049000
+                                      }
+                                    ]
+                                  }
+                                  physics Physics {
+                                    density -1
+                                    mass 0.173092
+                                    centerOfMass [ -0.001891 0.014587 -0.000379 ]
+                                    inertiaMatrix [
+                                      7.865863e-05 4.405545e-05 6.132583e-05
+                                      -2.133614e-08 -4.239819e-09 -1.841893e-06
+                                    ]
+                                  }
+                                }
+                              }
+                              Solid {
+                                translation -0.001699 0.035037 -0.052000
+                                rotation 0.000000 -1.000000 -0.000000 1.570798
+                                children [
+                                  SAHRV69_tibia_11Mesh {
+                                  }
+                                  Solid {
+                                    translation -0.004000 0.056999 -0.005201
+                                    rotation -0.706674 -0.034968 0.706674 3.071686
+                                    children [
+                                      SAHRV69_right_shine_panelMesh {
+                                        %{if jerseyColor == "red" then}%
+                                          color IS RED
+                                        %{end}%
+                                        %{if jerseyColor == "blue" then}%
+                                          color IS BLUE
+                                        %{end}%
+                                      }
+                                    ]
+                                    name "right_shine_panel"
+                                    boundingObject Transform {
+                                      translation 0.000000 0.000000 -0.002500
+                                      rotation 0.000000 1.000000 0.000000 0.000000
+                                      children [
+                                        Box {
+                                          size 0.052303 0.065000 0.007000
+                                        }
+                                      ]
+                                    }
+                                    physics Physics {
+                                      density -1
+                                      mass 0.007135
+                                      centerOfMass [ 0.000000 -0.000401 -0.000397 ]
+                                      inertiaMatrix [
+                                        2.345100e-06 1.554300e-06 3.873900e-06
+                                        -4.922900e-16 -2.379200e-12 1.002500e-09
+                                      ]
+                                    }
+                                  }
+                                ]
+                                name "tibia_11"
+                                boundingObject Group {
+                                  children [
+                                    Transform {
+                                      translation -0.001500 -0.02 -0.007495
+                                      rotation 1.000000 0.000000 0.000000 -0.3  
+                                      children [
+                                        Box {
+                                          size  0.003000 0.06 0.04
+                                        }
+                                      ]
+                                    }
+                                    Transform {
+                                    translation -0.001500 0.055 -0.007495
+                                    rotation 1.000000 0.000000 0.000000 0.15
+                                    children [
+                                      Box {
+                                        size 0.003000 0.1 0.04
+                                      }
+                                    ]
+                                  }
+                                    # Transform {
+                                    #    translation -0.001500 0.102 -0.002
+                                    #   rotation 0.000000 0.000000 1.000000 1.570796
+                                    #   children [
+                                    #     Cylinder {
+                                    #       radius 0.02
+                                    #       height 0.003
+                                    #     }
+                                    #   ]
+                                    # }
+                                  ]
+                                }
+                                physics Physics {
+                                  density -1
+                                  mass 0.024844
+                                  centerOfMass [ -0.001500 0.034376 -0.005399 ]
+                                  inertiaMatrix [
+                                    6.203465e-05 4.063772e-06 5.800814e-05
+                                    -1.947043e-12 -6.295029e-12 -1.245392e-06
+                                  ]
+                                }
+                              }
+                              Solid {
+                                translation 0.021920 0.058385 0.000000
+                                rotation -0.573982 -0.579027 0.579027 2.099455
+                                children [
+                                  SAHRV69_tibia_12Mesh {
+                                  }
+                                ]
+                                name "tibia_12" 
+                                
+                                boundingObject Group {
+                                children [
+                                   Transform {
+                                    translation -0.043 -0.001500 0.016456
+                                    rotation 0.000000 1.000000 0.000000 0.3
+                                    children [
+                                      Box {
+                                        size 0.06 0.003000 0.04
+                                      }
+                                    ]
+                                  }
+                                  Transform {
+                                    translation 0.033 -0.001500 0.016456
+                                    rotation 0.000000 1.000000 0.000000 -0.15
+                                    children [
+                                      Box {
+                                        size 0.1 0.003000 0.04
+                                      }
+                                    ]
+                                  }
+                                  # Transform {
+                                  #   translation 0.078 -0.001500 0.021
+                                  #   rotation 0.000000 1.000000 0.000000 1.570796
+                                  #   children [
+                                  #     Cylinder {
+                                  #       radius 0.02
+                                  #       height 0.003
+                                  #       }
+                                  #     ]
+                                  #   }
+                                  ]
+                                }
+                                physics Physics {
+                                  density -1
+                                  mass 0.024844
+                                  centerOfMass [ 0.011187 -0.001500 0.018123 ]
+                                  inertiaMatrix [
+                                    4.046108e-06 6.203465e-05 5.802581e-05
+                                    -1.152992e-20 -7.731813e-07 -4.569502e-21
+                                  ]
+                                }
+                              }
+                            ]
+                            name "tibia_1"
+                            boundingObject Transform {
+                              translation 0.008485 0.048485 -0.026000
+                              rotation 0.000000 1.000000 0.000000 0.000000
+                              children [
+                                Box {
+                                  size 0.026870 0.026870 0.052000
+                                }
+                              ]
+                            }
+                            physics Physics {
+                              density -1
+                              mass 0.012466
+                              centerOfMass [ 0.008485 0.048485 -0.026000 ]
+                              inertiaMatrix [
+                                4.141024e-06 4.141024e-06 1.490545e-06
+                                -7.185554e-07 4.357565e-21 6.164215e-22
+                              ]
+                            }
+                          }
+                        }
+                        Solid {
+                          translation -0.000022 -0.128000 0.003000
+                          rotation 0.577351 0.577351 0.577350 2.094396
+                          children [
+                            SAHRV69_right_knee_bone_1Mesh {
+                            }
+                            Solid {
+                              translation 0.073000 -0.004000 0.000022
+                              rotation 0.577350 0.577350 -0.577350 2.094395
+                              children [
+                                SAHRV69_right_hip_panelMesh {
+                                  %{if jerseyColor == "red" then}%
+                                    color IS RED
+                                  %{end}%
+                                  %{if jerseyColor == "blue" then}%
+                                    color IS BLUE
+                                  %{end}%
+                                }
+                              ]
+                              name "right_hip_panel"
+                              # boundingObject Transform {
+                              #   translation 0.000000 0.000000 -0.002500
+                              #   rotation 0.000000 1.000000 0.000000 0.000000
+                              #   children [
+                              #     Box {
+                              #       size 0.058000 0.070000 0.007000
+                              #     }
+                              #   ]
+                              # }
+                              physics Physics {
+                                density -1
+                                mass 0.008452
+                                centerOfMass [ 0.000000 0.000000 -0.000328 ]
+                                inertiaMatrix [
+                                  3.259300e-06 2.289400e-06 5.522400e-06
+                                  -9.994900e-16 -3.538200e-12 -1.592800e-21
+                                ]
+                              }
+                            }
+                          ]
+                          name "right_knee_bone_1"
+                          boundingObject Transform {
+                            translation 0.082439 -0.001500 0.000022
+                            rotation 0.000000 1.000000 0.000000 0.000000
+                            children [
+                              Box {
+                                size 0.118878 0.003000 0.044000
+                              }
+                            ]
+                          }
+                          physics Physics {
+                            density -1
+                            mass 0.016935
+                            centerOfMass [ 0.077535 -0.001500 0.000022 ]
+                            inertiaMatrix [
+                              2.918984e-06 2.339099e-05 2.049741e-05
+                              -2.362047e-21 1.217589e-21 -4.523817e-12
+                            ]
+                          }
+                        }
+                        Solid {
+                          translation -0.000022 -0.128000 0.058000
+                          rotation 0.577351 0.577351 0.577350 2.094396
+                          children [
+                            SAHRV69_right_knee_bone_2Mesh {
+                            }
+                          ]
+                          name "right_knee_bone_2"
+                          boundingObject Transform {
+                            translation 0.082439 -0.001500 0.000022
+                            rotation 0.000000 1.000000 0.000000 0.000000
+                            children [
+                              Box {
+                                size 0.118878 0.003000 0.044000
+                              }
+                            ]
+                          }
+                          physics Physics {
+                            density -1
+                            mass 0.016935
+                            centerOfMass [ 0.077535 -0.001500 0.000022 ]
+                            inertiaMatrix [
+                              2.918984e-06 2.339099e-05 2.049741e-05
+                              -2.907779e-21 2.745991e-21 -4.523817e-12
+                            ]
+                          }
+                        }
+                      ]
+                      name "right_knee_1"
+                      boundingObject Transform {
+                        translation 0.000000 -0.121950 0.029000
+                        rotation 0.000000 1.000000 0.000000 0.000000
+                        children [
+                          Box {
+                            size 0.049000 0.067100 0.050000
+                          }
+                        ]
+                      }
+                      physics Physics {
+                        density -1
+                        mass 0.185809
+                        centerOfMass [ 0.000003 -0.121892 0.029070 ]
+                        inertiaMatrix [
+                          7.705682e-05 4.823411e-05 6.693444e-05
+                          3.068580e-09 -4.247805e-09 -1.841894e-06
+                        ]
+                      }
+                    }
+                  }
+                  Solid {
+                    translation -0.017000 -0.014500 -0.016722
+                    rotation 0.577350 -0.577352 -0.577350 2.094399
+                    children [
+                      SAHRV69_joint_block02Mesh {
+                      }
+                      Solid {
+                        translation 0.000500 -0.015700 -0.002000
+                        rotation -0.577350 0.577350 0.577352 2.094399
+                        children [
+                          SAHRV69_dubel02Mesh {
+                          }
+                        ]
+                        name "dubel02"
+                        boundingObject Transform {
+                          translation 0.015000 -0.003050 -0.015500
+                          rotation 0.000000 1.000000 0.000000 0.000000
+                          children [
+                            Box {
+                              size 0.040200 0.065100 0.049000
+                            }
+                          ]
+                        }
+                        physics Physics {
+                          density -1
+                          mass 0.159507
+                          centerOfMass [ 0.015004 -0.000778 -0.016589 ]
+                          inertiaMatrix [
+                            7.602558e-05 4.229576e-05 6.034857e-05
+                            -3.068580e-09 4.247805e-09 -1.841894e-06
+                          ]
+                        }
+                      }
+                    ]
+                    name "joint_block02"
+                    boundingObject Transform {
+                      translation 0.018000 -0.006850 -0.017000
+                      rotation 0.000000 1.000000 0.000000 0.000000
+                      children [
+                        Box {
+                          size 0.036000 0.017700 0.039000
+                        }
+                      ]
+                    }
+                    physics Physics {
+                      density -1
+                      mass 0.014404
+                      centerOfMass [ 0.019194 -0.007194 -0.016997 ]
+                      inertiaMatrix [
+                        2.951288e-06 4.145151e-06 1.362015e-06
+                        -8.654079e-09 1.349580e-10 1.370111e-10
+                      ]
+                    }
+                  }
+                ]
+                name "mx106_block_mir_1"
+                boundingObject Transform {
+                  translation 0.000000 -0.018050 0.005278
+                  rotation 0.000000 1.000000 0.000000 0.000000
+                  children [
+                    Box {
+                      size 0.052000 0.065100 0.050800
+                    }
+                  ]
+                }
+                physics Physics {
+                  density -1
+                  mass 0.176516
+                  centerOfMass [ 0.000074 -0.014304 0.001878 ]
+                  inertiaMatrix [
+                    6.169158e-05 4.424123e-05 7.884576e-05
+                    1.841894e-06 -4.239819e-09 -2.747330e-08
+                  ]
+                }
+              }
+            }
+          ]
+          name "u_block_1"
+          boundingObject Transform {
+            translation 0.004709 0.000000 0.008000
+            rotation 0.000000 1.000000 0.000000 0.000000
+            children [
+              Box {
+                size 0.056418 0.030000 0.006000
+              }
+            ]
+          }
+          physics Physics {
+            density -1
+            mass 0.017510
+            centerOfMass [ 0.004375 0.000000 0.007365 ]
+            inertiaMatrix [
+              3.135657e-06 4.771178e-06 7.793656e-06
+              -1.574594e-12 -9.785051e-09 7.609569e-14
+            ]
+          }
+        }
+      }
+      %{ if enable_backlash then }%
+        DEF left_shoulder_pitch HingeJointWithBacklash {
+          gearMass 0.001
+          backlash %{= backlash_mx106 }%
+      %{ else }%
+        DEF left_shoulder_pitch HingeJoint {
+      %{ end }%
+        jointParameters HingeJointParameters {
+          axis 1.000000 -0.000004 -0.000004
+          anchor 0.123660 -0.006258 0.155000
+          dampingConstant %{= damping_mx106}%
+          staticFriction  %{= friction_mx106}%
+        }
+        device [
+          RotationalMotor {
+            # name "left_shoulder_pitch [shoulder]"
+            name "left_shoulder_pitch"
+            maxTorque       %{= torque_mx106}%
+            maxVelocity     %{= vel_mx106}%
+          }
+          PositionSensor {
+            name "left_shoulder_pitch_sensor"
+            resolution %{= resolution_mx106}%
+          }
+        ]
+        endPoint Solid {
+          translation 0.123660 -0.006258 0.155000
+          rotation -0.577350 0.577352 -0.577350 2.094399
+          children [
+            SAHRV69_u_shoulder_1Mesh {
+            }
+            %{ if enable_backlash then }%
+              DEF left_shoulder_roll HingeJointWithBacklash {
+                gearMass 0.001
+                backlash %{= backlash_mx64 }%
+            %{ else }%
+              DEF left_shoulder_roll HingeJoint {
+            %{ end }%
+              jointParameters HingeJointParameters {
+                axis 1.000000 -0.000000 -0.000002
+                anchor 0.010350 0.030000 0.035500
+                dampingConstant %{= damping_mx64}%
+                staticFriction  %{= friction_mx64}%
+              }
+              device [
+                RotationalMotor {
+                  name "left_shoulder_roll"
+                  maxTorque       %{= torque_mx64}%
+                  maxVelocity     %{= vel_mx64}%
+                }
+                PositionSensor {
+                  name "left_shoulder_roll_sensor"
+                  resolution %{= resolution_mx64}%
+                }
+              ]
+              endPoint Solid {
+                translation 0.010350 0.030000 0.035500
+                rotation -0.707106 0.000000 0.707107 3.141593
+                children [
+                  SAHRV69_left_humerus_1Mesh {
+                  }
+                  %{ if enable_backlash then }%
+                    DEF left_elbow HingeJointWithBacklash {
+                      gearMass 0.001
+                      backlash %{= backlash_mx64 }%
+                  %{ else }%
+                    DEF left_elbow HingeJoint {
+                  %{ end }%
+                    jointParameters HingeJointParameters {
+                      axis -1.000000 0.000000 0.000002
+                      anchor -0.025500 -0.114500 0.009950
+                      dampingConstant %{= damping_mx64}%
+                      staticFriction  %{= friction_mx64}%
+                    }
+                    device [
+                      RotationalMotor {
+                        name "left_elbow"
+                        maxTorque       %{= torque_mx64}%
+                        maxVelocity     %{= vel_mx64}%
+                      }
+                      PositionSensor {
+                        name "left_elbow_sensor"
+                        resolution %{= resolution_mx64}%
+                      }
+                    ]
+                    endPoint Solid {
+                      translation -0.025500 -0.114500 0.009950
+                      rotation 0.707107 -0.000000 0.707106 3.141593
+                      children [
+                        SAHRV69_left_radius_1Mesh {
+                        }
+                        Solid {
+                          translation 0.026000 0.158900 0.039500
+                          rotation 0.000000 0.000000 1.000000 3.141593
+                          children [
+                            SAHRV69_left_radius_1_1_radius_plateMesh {
+                            }
+                            Solid {
+                              translation 0.000000 0.000000 -0.014000
+                              rotation 0.000000 1.000000 0.000000 0.000000
+                              children [
+                                SAHRV69_left_boxing_gloveMesh {
+                                }
+                                # Solid {
+                                #   translation 0 -0.1 0
+                                #   rotation 0.000000 1.000000 0.000000 0.000000
+                                #   name "left_hand_end [hand]"
+                                #   boundingObject Transform {
+                                #     children [
+                                #       Box {
+                                #         size 0.05 0.05 0.05
+                                #       }
+                                #     ]
+                                #   }
+                                # }
+                              ]
+                              name "left_boxing_glove [hand]"
+                              boundingObject Group {
+                                children [
+                                  Transform {
+                                    translation  0.000000 0.07 0.0
+                                    rotation 0.000000 0.000000 -1.000000 1.570796
+                                    children [
+                                    Box {
+                                      size 0.07 0.03 0.028000
+                                      }
+                                    ]
+                                  }
+                                  Transform {
+                                    translation 0.00 0.000000 0.0
+                                    rotation 1.000000 0.000000 0.000000 1.570796
+                                    children [
+                                    Cylinder {
+                                      radius 0.035
+                                      height 0.03
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                              physics Physics {
+                                density -1
+                                mass 0.036095
+                                centerOfMass [ -0.000085 0.035047 -0.000000 ]
+                                inertiaMatrix [
+                                  4.953461e-05 1.028778e-05 5.516469e-05
+                                  1.098263e-07 -8.810928e-12 2.738622e-13
+                                ]
+                              }
+                            }
+                          ]
+                          name "left_radius_1_1_radius_plate [arm]"
+                          boundingObject Transform {
+                            translation -0.011500 0.110900 -0.014000
+                            rotation 0.000000 1.000000 0.000000 0.000000
+                            children [
+                              Box {
+                                size 0.003000 0.124000 0.028000
+                              }
+                            ]
+                          }
+                          physics Physics {
+                            density -1
+                            mass 0.012740
+                            centerOfMass [ -0.011500 0.113902 -0.014000 ]
+                            inertiaMatrix [
+                              1.680597e-05 9.732133e-07 1.585187e-05
+                              8.488275e-21 1.491642e-12 6.318772e-19
+                            ]
+                          }
+                        }
+                        Solid {
+                          translation 0.036000 0.000000 0.002000
+                          rotation -0.577350 -0.577351 0.577351 4.188789
+                          children [
+                            SAHRV69_left_radius_bone1Mesh {
+                            }
+                          ]
+                          name "left_radius_bone1 [arm]"
+                          boundingObject Transform {
+                            translation -0.023525 -0.019500 0.000000
+                            rotation 0.000000 1.000000 0.000000 0.000000
+                            children [
+                              Box {
+                                size 0.050950 0.039000 0.028000
+                              }
+                            ]
+                          }
+                          physics Physics {
+                            density -1
+                            mass 0.004365
+                            centerOfMass [ -0.047992 -0.018809 -0.000000 ]
+                            inertiaMatrix [
+                              8.704731e-07 3.405717e-07 5.327952e-07
+                              -6.426069e-10 -2.364855e-24 2.012585e-22
+                            ]
+                          }
+                        }
+                        Solid {
+                          translation 0.036000 0.000000 0.049000
+                          rotation -0.577350 -0.577351 0.577351 4.188789
+                          children [
+                            SAHRV69_left_radius_bone2Mesh {
+                            }
+                          ]
+                          name "left_radius_bone2 [arm]"
+                          boundingObject Transform {
+                            translation 0.023525 -0.019500 0.000000
+                            rotation 0.000000 1.000000 0.000000 0.000000
+                            children [
+                              Box {
+                                size 0.050950 0.039000 0.028000
+                              }
+                            ]
+                          }
+                          physics Physics {
+                            density -1
+                            mass 0.004365
+                            centerOfMass [ 0.047992 -0.018809 0.000000 ]
+                            inertiaMatrix [
+                              8.704731e-07 3.405717e-07 5.327952e-07
+                              6.426069e-10 1.086059e-23 1.901281e-22
+                            ]
+                          }
+                        }
+                      ]
+                      name "left_radius_1 [arm]"
+                      boundingObject Transform {
+                        translation 0.028000 0.000000 0.025500
+                        rotation 0.000000 1.000000 0.000000 0.000000
+                        children [
+                          Box {
+                            size 0.016000 0.033000 0.050900
+                          }
+                        ]
+                      }
+                      physics Physics {
+                        density -1
+                        mass 0.008755
+                        centerOfMass [ 0.034048 0.000000 0.025500 ]
+                        inertiaMatrix [
+                          2.837158e-06 1.671192e-06 1.221285e-06
+                          -5.970066e-23 -2.526251e-12 -8.476985e-23
+                        ]
+                      }
+                    }
+                  }
+                  Solid {
+                    translation -0.021000 -0.042500 0.009950
+                    rotation 0.000000 -1.000000 -0.000000 4.712389
+                    children [
+                      SAHRV69_left_humerus_panelMesh {
+                        %{if jerseyColor == "red" then}%
+                          color IS RED
+                        %{end}%
+                        %{if jerseyColor == "blue" then}%
+                          color IS BLUE
+                        %{end}%
+                      }
+                    ]
+                    name "left_humerus_panel [arm]"
+                    boundingObject Transform {
+                      translation 0.000000 0.000000 0.003000
+                      rotation 0.000000 1.000000 0.000000 0.000000
+                      children [
+                        Box {
+                          size 0.044000 0.110000 0.008000
+                        }
+                      ]
+                    }
+                    physics Physics {
+                      density -1
+                      mass 0.008741
+                      centerOfMass [ 0.000000 -0.001326 0.000088 ]
+                      inertiaMatrix [
+                        8.227300e-06 1.564800e-06 9.769900e-06
+                        4.411000e-21 2.414500e-22 3.331500e-08
+                      ]
+                    }
+                  }
+                ]
+                name "left_humerus_1 [arm]"
+                boundingObject Transform {
+                  translation 0.000390 -0.057250 0.010740
+                  rotation 0.000000 1.000000 0.000000 0.000000
+                  children [
+                    Box {
+                      size 0.047780 0.142500 0.047780
+                    }
+                  ]
+                }
+                physics Physics {
+                  density -1
+                  mass 0.313976
+                  centerOfMass [ 0.000149 -0.057250 0.010282 ]
+                  inertiaMatrix [
+                    1.134802e-04 7.736216e-05 1.134802e-04
+                    -1.641487e-06 -3.698787e-11 1.641487e-06
+                  ]
+                }
+              }
+            }
+            Solid {
+              translation 0.023500 0.000000 0.000500
+              rotation 0.577350 -0.577350 -0.577350 2.094395
+              children [
+                SAHRV69_u_shoulder_1_bone_frontMesh {
+                }
+              ]
+              name "u_shoulder_1_bone_front [arm]"
+              boundingObject Transform {
+                translation -0.010500 0.026750 -0.001500
+                rotation 0.000000 1.000000 0.000000 0.000000
+                children [
+                  Box {
+                    size 0.051000 0.044500 0.003000
+                  }
+                ]
+              }
+              physics Physics {
+                density -1
+                mass 0.005838
+                centerOfMass [ -0.009078 0.026395 -0.001500 ]
+                inertiaMatrix [
+                  9.504486e-07 1.089626e-06 2.031318e-06
+                  4.840052e-07 -7.566924e-13 1.472239e-12
+                ]
+              }
+            }
+            Solid {
+              translation -0.026500 0.000000 0.000500
+              rotation 0.577350 -0.577350 -0.577350 2.094395
+              children [
+                SAHRV69_u_shoulder_1_bone_backMesh {
+                }
+              ]
+              name "u_shoulder_1_bone_back [arm]"
+              boundingObject Transform {
+                translation -0.010500 0.026750 -0.001500
+                rotation 0.000000 1.000000 0.000000 0.000000
+                children [
+                  Box {
+                    size 0.051000 0.044500 0.003000
+                  }
+                ]
+              }
+              physics Physics {
+                density -1
+                mass 0.005838
+                centerOfMass [ -0.009078 0.026395 -0.001500 ]
+                inertiaMatrix [
+                  9.504486e-07 1.089626e-06 2.031318e-06
+                  4.840052e-07 -7.566924e-13 1.472239e-12
+                ]
+              }
+            }
+          ]
+          name "u_shoulder_1 [arm]"
+          boundingObject Transform {
+            translation 0.000000 0.000000 0.005500
+            rotation 0.000000 1.000000 0.000000 0.000000
+            children [
+              Box {
+                size 0.053000 0.047000 0.011000
+              }
+            ]
+          }
+          physics Physics {
+            density -1
+            mass 0.050475
+            centerOfMass [ 0.000000 0.000000 0.003446 ]
+            inertiaMatrix [
+              7.624516e-06 9.937798e-06 1.741304e-05
+              2.861850e-14 1.529543e-11 -1.304723e-14
+            ]
+          }
+        }
+      }
+      %{ if enable_backlash then }%
+        DEF right_shoulder_pitch HingeJointWithBacklash {
+          gearMass 0.001
+          backlash %{= backlash_mx106 }%
+      %{ else }%
+        DEF right_shoulder_pitch HingeJoint {
+      %{ end }%
+        jointParameters HingeJointParameters {
+          axis 1.000000 0.000004 -0.000004
+          anchor -0.022341 -0.006258 0.155000
+          dampingConstant %{= damping_mx106}%
+          staticFriction  %{= friction_mx106}%
+        }
+        device [
+          RotationalMotor {
+            # name "right_shoulder_pitch [shoulder]"
+            name "right_shoulder_pitch"
+            maxTorque       %{= torque_mx106}%
+            maxVelocity     %{= vel_mx106}%
+          }
+          PositionSensor {
+            name "right_shoulder_pitch_sensor"
+            resolution %{= resolution_mx106}%
+          }
+        ]
+        endPoint Solid {
+          translation -0.022341 -0.006258 0.155000
+          rotation 0.577350 0.577352 0.577350 2.094399
+          children [
+            SAHRV69_u_shoulder_2Mesh {
+            }
+            %{ if enable_backlash then }%
+              DEF right_shoulder_roll HingeJointWithBacklash {
+                gearMass 0.001
+                backlash %{= backlash_mx64 }%
+            %{ else }%
+              DEF right_shoulder_roll HingeJoint {
+            %{ end }%
+              jointParameters HingeJointParameters {
+                axis -1.000000 0.000000 0.000002
+                anchor 0.009113 -0.030000 -0.035500
+                dampingConstant %{= damping_mx64}%
+                staticFriction  %{= friction_mx64}%
+              }
+              device [
+                RotationalMotor {
+                  name "right_shoulder_roll"
+                  maxTorque       %{= torque_mx64}%
+                  maxVelocity     %{= vel_mx64}%
+                }
+                PositionSensor {
+                  name "right_shoulder_roll_sensor"
+                  resolution %{= resolution_mx64}%
+                }
+              ]
+              endPoint Solid {
+                translation 0.009113 -0.030000 -0.035500
+                rotation 0.000000 -1.000000 0.000000 1.570795
+                children [
+                  SAHRV69_right_humerus_1Mesh {
+                  }
+                  %{ if enable_backlash then }%
+                    DEF right_elbow HingeJointWithBacklash {
+                      gearMass 0.001
+                      backlash %{= backlash_mx64 }%
+                  %{ else }%
+                    DEF right_elbow HingeJoint {
+                  %{ end }%
+                    jointParameters HingeJointParameters {
+                      axis 1.000000 -0.000000 0.000002
+                      anchor -0.014021 -0.114500 0.009113
+                      dampingConstant %{= damping_mx64}%
+                      staticFriction  %{= friction_mx64}%
+                    }
+                    device [
+                      RotationalMotor {
+                        name "right_elbow"
+                        maxTorque       %{= torque_mx64}%
+                        maxVelocity     %{= vel_mx64}%
+                      }
+                      PositionSensor {
+                        name "right_elbow_sensor"
+                        resolution %{= resolution_mx64}%
+                      }
+                    ]
+                    endPoint Solid {
+                      translation -0.014021 -0.114500 0.009113
+                      rotation -0.707107 0.000000 0.707106 3.141593
+                      children [
+                        SAHRV69_right_radius_1Mesh {
+                        }
+                        Solid {
+                          translation 0.026000 0.159000 -0.028021
+                          rotation 0.000000 0.000000 -1.000000 1.570796
+                          children [
+                            SAHRV69_right_radius_1_0_radius_plateMesh {
+                            }
+                            Solid {
+                              translation 0.000000 0.000000 0.014000
+                              rotation 0.000000 0.000000 -1.000000 1.570796
+                              children [
+                                SAHRV69_right_boxing_gloveMesh {
+                                }
+                              ]
+                              name "right_boxing_glove [hand]"
+                              boundingObject Group {
+                                children [
+                                  Transform {
+                                    translation  0.000000 0.07 0.0
+                                    rotation 0.000000 0.000000 -1.000000 1.570796
+                                    children [
+                                    Box {
+                                      size 0.07 0.03 0.028000
+                                      }
+                                    ]
+                                  }
+                                  Transform {
+                                    translation 0.00 0.000000 0.0
+                                    rotation 1.000000 0.000000 0.000000 1.570796
+                                    children [
+                                    Cylinder {
+                                      radius 0.035
+                                      height 0.03
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                              physics Physics {
+                                density -1
+                                mass 0.036095
+                                centerOfMass [ -0.000085 0.035047 -0.000000 ]
+                                inertiaMatrix [
+                                  4.953461e-05 1.028778e-05 5.516469e-05
+                                  1.098263e-07 -8.810928e-12 2.738622e-13
+                                ]
+                              }
+                            }
+                          ]
+                          name "right_radius_1_0_radius_plate [arm]"
+                          boundingObject Transform {
+                            translation 0.111000 0.011500 0.014000
+                            rotation 0.000000 1.000000 0.000000 0.000000
+                            children [
+                              Box {
+                                size 0.124000 0.003000 0.028000
+                              }
+                            ]
+                          }
+                          physics Physics {
+                            density -1
+                            mass 0.012740
+                            centerOfMass [ 0.114002 0.011500 0.014000 ]
+                            inertiaMatrix [
+                              9.732133e-07 1.680597e-05 1.585187e-05
+                              -3.267791e-21 -6.365388e-19 -1.491642e-12
+                            ]
+                          }
+                        }
+                        Solid {
+                          translation 0.036000 0.000000 0.009479
+                          rotation 0.577350 0.577350 -0.577350 2.094395
+                          children [
+                            SAHRV69_right_radius_bone1Mesh {
+                            }
+                          ]
+                          name "right_radius_bone1 [arm]"
+                          boundingObject Transform {
+                            translation 0.023475 -0.019500 0.000000
+                            rotation 0.000000 1.000000 0.000000 0.000000
+                            children [
+                              Box {
+                                size 0.050950 0.039000 0.028000
+                              }
+                            ]
+                          }
+                          physics Physics {
+                            density -1
+                            mass 0.004365
+                            centerOfMass [ -0.000992 -0.018809 0.000000 ]
+                            inertiaMatrix [
+                              8.704731e-07 3.405717e-07 5.327952e-07
+                              -6.426069e-10 8.196046e-24 3.557327e-23
+                            ]
+                          }
+                        }
+                        Solid {
+                          translation 0.036000 0.000000 -0.037521
+                          rotation 0.577350 0.577350 -0.577350 2.094395
+                          children [
+                            SAHRV69_right_radius_bone2Mesh {
+                            }
+                          ]
+                          name "right_radius_bone2 [arm]"
+                          boundingObject Transform {
+                            translation -0.023475 -0.019500 0.000000
+                            rotation 0.000000 1.000000 0.000000 0.000000
+                            children [
+                              Box {
+                                size 0.050950 0.039000 0.028000
+                              }
+                            ]
+                          }
+                          physics Physics {
+                            density -1
+                            mass 0.004365
+                            centerOfMass [ 0.000992 -0.018809 0.000000 ]
+                            inertiaMatrix [
+                              8.704731e-07 3.405717e-07 5.327952e-07
+                              6.426069e-10 2.426651e-24 6.254089e-23
+                            ]
+                          }
+                        }
+                      ]
+                      name "right_radius_1 [arm]"
+                      boundingObject Transform {
+                        translation 0.028000 0.000000 -0.014021
+                        rotation 0.000000 1.000000 0.000000 0.000000
+                        children [
+                          Box {
+                            size 0.016000 0.033000 0.050900
+                          }
+                        ]
+                      }
+                      physics Physics {
+                        density -1
+                        mass 0.008755
+                        centerOfMass [ 0.034048 0.000000 -0.014021 ]
+                        inertiaMatrix [
+                          2.837158e-06 1.671192e-06 1.221285e-06
+                          3.979284e-22 -3.915388e-22 -4.846271e-22
+                        ]
+                      }
+                    }
+                  }
+                  Solid {
+                    translation -0.021000 -0.042500 0.009113
+                    rotation 0.000000 1.000000 0.000000 1.570796
+                    children [
+                      SAHRV69_right_humerus_panelMesh {
+                        %{if jerseyColor == "red" then}%
+                          color IS RED
+                        %{end}%
+                        %{if jerseyColor == "blue" then}%
+                          color IS BLUE
+                        %{end}%
+                      }
+                    ]
+                    name "right_humerus_panel [arm]"
+                    boundingObject Transform {
+                      translation -0.000000 0.000000 0.003000
+                      rotation 0.000000 1.000000 0.000000 0.000000
+                      children [
+                        Box {
+                          size 0.044000 0.110000 0.008000
+                        }
+                      ]
+                    }
+                    physics Physics {
+                      density -1
+                      mass 0.008741
+                      centerOfMass [ -0.000000 -0.001326 0.000088 ]
+                      inertiaMatrix [
+                        8.227300e-06 1.564800e-06 9.769900e-06
+                        -5.208500e-14 -2.411700e-12 3.331500e-08
+                      ]
+                    }
+                  }
+                ]
+                name "right_humerus_1 [arm]"
+                boundingObject Transform {
+                  translation 0.000390 -0.057250 0.008723
+                  rotation 0.000000 1.000000 0.000000 0.000000
+                  children [
+                    Box {
+                      size 0.047780 0.142500 0.047780
+                    }
+                  ]
+                }
+                physics Physics {
+                  density -1
+                  mass 0.313976
+                  centerOfMass [ 0.000149 -0.057250 0.008965 ]
+                  inertiaMatrix [
+                    1.134802e-04 7.736216e-05 1.134802e-04
+                    -1.641434e-06 -3.698787e-11 -1.641439e-06
+                  ]
+                }
+              }
+            }
+            Solid {
+              translation -0.026500 0.000000 -0.000500
+              rotation -0.577350 -0.577350 0.577350 2.094395
+              children [
+                SAHRV69_u_shoulder_2_bone_frontMesh {
+                }
+              ]
+              name "u_shoulder_2_bone_front [arm]"
+              boundingObject Transform {
+                translation -0.010500 0.026750 -0.001500
+                rotation 0.000000 1.000000 0.000000 0.000000
+                children [
+                  Box {
+                    size 0.051000 0.044500 0.003000
+                  }
+                ]
+              }
+              physics Physics {
+                density -1
+                mass 0.005838
+                centerOfMass [ -0.009078 0.026395 -0.001500 ]
+                inertiaMatrix [
+                  9.504486e-07 1.089626e-06 2.031318e-06
+                  4.840052e-07 8.624285e-18 -1.677877e-17
+                ]
+              }
+            }
+            Solid {
+              translation 0.023500 0.000000 -0.000500
+              rotation -0.577350 -0.577350 0.577350 2.094395
+              children [
+                SAHRV69_u_shoulder_2_bone_backMesh {
+                }
+              ]
+              name "u_shoulder_2_bone_back [arm]"
+              boundingObject Transform {
+                translation -0.010500 0.026750 -0.001500
+                rotation 0.000000 1.000000 0.000000 0.000000
+                children [
+                  Box {
+                    size 0.051000 0.044500 0.003000
+                  }
+                ]
+              }
+              physics Physics {
+                density -1
+                mass 0.005838
+                centerOfMass [ -0.009078 0.026395 -0.001500 ]
+                inertiaMatrix [
+                  9.504486e-07 1.089626e-06 2.031318e-06
+                  4.840052e-07 -2.574725e-17 5.009502e-17
+                ]
+              }
+            }
+          ]
+          name "u_shoulder_2 [arm]"
+          boundingObject Transform {
+            translation 0.000000 0.000000 -0.005500
+            rotation 0.000000 1.000000 0.000000 0.000000
+            children [
+              Box {
+                size 0.053000 0.047000 0.011000
+              }
+            ]
+          }
+          physics Physics {
+            density -1
+            mass 0.050475
+            centerOfMass [ 0.000000 -0.000000 -0.003446 ]
+            inertiaMatrix [
+              7.624516e-06 9.937798e-06 1.741304e-05
+              -2.861851e-14 7.922495e-15 -1.304719e-14
+            ]
+          }
+        }
+      }
+      Solid {
+        translation 0.050658 -0.011338 0.184200
+        rotation 0.000000 0.000000 -1.000000 1.570800
+        children [
+          SAHRV69_head_baseMesh {
+          }
+        ]
+        name "head_base"
+      }
+      Solid {
+        translation 0.050517 0.014637 -0.048900
+        rotation 0.000000 0.000000 -1.000000 1.570800
+        children [
+          SAHRV69_trunkMesh {
+          }
+        ]
+        name "trunk"
+      }
+      Solid {
+        translation 0.050658 -0.024258 0.141000
+        rotation -0.000000 0.000000 1.000000 3.141600
+        children [
+          SAHRV69_Front_dempherMesh {
+          }
+        ]
+        name "Front_dempher"
+        boundingObject Transform {
+          translation 0.000000 0.028425 0.000000
+          rotation 0.000000 1.000000 0.000000 0.000000
+          children [
+            Box {
+              size 0.133516 0.063849 0.020000
+            }
+          ]
+        }
+        physics Physics {
+          density -1
+          mass 0.030851
+          centerOfMass [ -0.000000 0.023804 -0.000055 ]
+          inertiaMatrix [
+            1.239465e-05 4.266907e-05 5.317651e-05
+            6.545695e-15 1.988453e-14 -3.388747e-08
+          ]
+        }
+      }
+      Solid {
+        translation 0.119660 0.095622 0.215880
+        rotation 0.017495 -0.999694 -0.017495 1.571103
+        children [
+          SAHRV69_HandleMesh {
+          }
+        ]
+        name "Handle"
+        boundingObject Transform {
+          translation -0.027821 -0.015930 0.069000
+          rotation 0.000000 1.000000 0.000000 0.000000
+          children [
+            Box {
+              size 0.093842 0.070059 0.144000
+            }
+          ]
+        }
+        physics Physics {
+          density -1
+          mass 0.035214
+          centerOfMass [ -0.011016 -0.006641 0.069000 ]
+          inertiaMatrix [
+            6.074648e-05 6.249415e-05 1.448903e-05
+            -4.632062e-06 9.771227e-12 -7.525873e-11
+          ]
+        }
+      }
+      Solid {
+        translation 0.050658 0.013186 0.123000
+        rotation -0.577350 -0.577352 0.577350 2.094399
+        children [
+          SAHRV69_DXL_BoardMesh {
+          }
+          Accelerometer {
+              # lookupTable [%{= -accelerometer_range_g * 9.81 }% -32767 0,
+              #              %{= accelerometer_range_g * 9.81 }% 32768 0]
+              name "accelerometer"
+              rotation 1.000000 0.000000 0.000000 1.5706
+            }
+          Gyro {
+              # lookupTable [%{= -gyro_range_deg_s / 180 * 3.1416 }% -32767 0,
+              #              %{= gyro_range_deg_s / 180 * 3.1416 }% 32768 0]
+              name "gyro"
+              rotation 1.000000 0.000000 0.000000 1.5706
+            }
+        ]
+        name "DXL_Board"
+        boundingObject Transform {
+          translation 0.000000 0.006300 0.000000
+          rotation 0.000000 1.000000 0.000000 0.000000
+          children [
+            Box {
+              size 0.052000 0.022600 0.072351
+            }
+          ]
+        }
+        physics Physics {
+          density -1
+          mass 0.059010
+          centerOfMass [ -0.001639 0.007699 0.001748 ]
+          inertiaMatrix [
+            2.074849e-05 3.539271e-05 1.791081e-05
+            4.951005e-07 -8.488360e-07 -2.058427e-07
+          ]
+        }
+      }
+      Solid {
+        translation -0.014341 0.063742 0.000000
+        rotation -0.000003 0.707108 0.707105 3.141598
+        children [
+          SAHRV69_cover_batteryMesh {
+            %{if jerseyColor == "red" then}%
+              color IS RED
+            %{end}%
+            %{if jerseyColor == "blue" then}%
+              color IS BLUE
+            %{end}%
+          }
+        ]
+        name "cover_battery"
+        boundingObject Transform {
+          translation -0.065000 0.025100 0.013879
+          rotation 0.000000 1.000000 0.000000 0.000000
+          children [
+            Box {
+              size 0.158000 0.065000 0.036243
+            }
+          ]
+        }
+        physics Physics {
+          density -1
+          mass 0.037304
+          centerOfMass [ -0.065000 0.026664 0.020215 ]
+          inertiaMatrix [
+            1.684500e-05 7.191000e-05 8.526700e-05
+            4.535800e-11 2.673000e-10 7.944600e-07
+          ]
+        }
+      }
+      Solid {
+        translation 0.050658 -0.033258 0.043500
+        rotation -0.000000 0.000000 1.000000 3.141600
+        children [
+          SAHRV69_front_panelMesh {
+            %{if jerseyColor == "red" then}%
+              color IS RED
+            %{end}%
+            %{if jerseyColor == "blue" then}%
+              color IS BLUE
+            %{end}%
+          }
+        ]
+        name "front_panel"
+        boundingObject Transform {
+          translation 0.000000 -0.002511 0.040000
+          rotation 0.000000 1.000000 0.000000 0.000000
+          children [
+            Box {
+              size 0.147600 0.012422 0.080000
+            }
+          ]
+        }
+        physics Physics {
+          density -1
+          mass 0.031834
+          centerOfMass [ 0.000000 -0.001853 0.047157 ]
+          inertiaMatrix [
+            1.680900e-05 6.636200e-05 4.976200e-05
+            -8.811600e-13 -5.862400e-12 8.695200e-08
+          ]
+        }
+      }
+      Solid {
+        translation 0.114640 0.017753 0.043000
+        rotation 0.000000 0.000000 1.000000 3.119500
+        children [
+          SAHRV69_left_panelMesh {
+            %{if jerseyColor == "red" then}%
+              color IS RED
+            %{end}%
+            %{if jerseyColor == "blue" then}%
+              color IS BLUE
+            %{end}%
+          }
+        ]
+        name "left_panel"
+        boundingObject Transform {
+          translation -0.003939 0.000000 0.040000
+          rotation 0.000000 1.000000 0.000000 0.000000
+          children [
+            Box {
+              size 0.015322 0.113600 0.080000
+            }
+          ]
+        }
+        physics Physics {
+          density -1
+          mass 0.022701
+          centerOfMass [ -0.003011 0.004899 0.035218 ]
+          inertiaMatrix [
+            3.097500e-05 1.041800e-05 2.075100e-05
+            -2.280100e-07 4.462000e-08 1.500400e-06
+          ]
+        }
+      }
+      Solid {
+        translation -0.013326 0.017731 0.043000
+        rotation 0.000000 0.000000 1.000000 0.021405
+        children [
+          SAHRV69_right_panelMesh {
+            %{if jerseyColor == "red" then}%
+              color IS RED
+            %{end}%
+            %{if jerseyColor == "blue" then}%
+              color IS BLUE
+            %{end}%
+          }
+        ]
+        name "right_panel"
+        boundingObject Transform {
+          translation -0.001039 0.000000 0.040000
+          rotation 0.000000 1.000000 0.000000 0.000000
+          children [
+            Box {
+              size 0.009522 0.113600 0.080000
+            }
+          ]
+        }
+        physics Physics {
+          density -1
+         mass 0.022701
+          centerOfMass [ -0.003011 0.004899 0.035218 ]
+          inertiaMatrix [
+            3.097500e-05 1.041800e-05 2.075100e-05
+            -2.280100e-07 4.462000e-08 1.500400e-06
+          ]
+        }
+      }
+    %{ if number == "1" then }%
+      Solid {
+        translation 0.050513 -0.033271 0.049754
+        rotation 0.998099 0.043577 0.043577 1.572703
+        children [
+          SAHRV71_num_01Mesh {
+          }
+        ]
+        name "num_01"
+        boundingObject Transform {
+          translation 0.016667 0.024746 0.000500
+          rotation 0.000000 1.000000 0.000000 0.000000
+          children [
+            Box {
+              size 0.017949 0.050000 0.001000
+            }
+          ]
+        }
+        physics Physics {
+          density -1
+          mass 0.000556
+          centerOfMass [ 0.020778 0.027022 0.000500 ]
+          inertiaMatrix [
+            1.080986e-07 9.433419e-09 1.174393e-07
+            9.079101e-09 3.308722e-24 -2.688337e-24
+          ]
+        }
+      }
+      %{ end }%
+      %{ if number == "2" then }%
+      Solid {
+        translation 0.049542 -0.033356 0.049754
+        rotation 0.998099 0.043577 0.043577 1.572703
+        children [
+          SAHRV71_num_02Mesh {
+          }
+        ]
+        name "num_02"
+        boundingObject Transform {
+          translation 0.018269 0.024746 0.000500
+          rotation 0.000000 1.000000 0.000000 0.000000
+          children [
+            Box {
+              size 0.032692 0.050000 0.001000
+            }
+          ]
+        }
+        physics Physics {
+          density -1
+          mass 0.000969
+          centerOfMass [ 0.019015 0.022846 0.000500 ]
+          inertiaMatrix [
+            2.815399e-07 7.615294e-08 3.575314e-07
+            -1.882287e-08 -5.355306e-14 -2.408320e-14
+          ]
+        }
+      }
+      %{ end }%
+      %{ if number == "3" then }%
+      Solid {
+        translation 0.049159 -0.033390 0.050500
+        rotation 0.998099 0.043577 0.043577 1.572703
+        children [
+          SAHRV71_num_03Mesh {
+          }
+        ]
+        name "num_03"
+        boundingObject Transform {
+          translation 0.019231 0.024425 0.000500
+          rotation 0.000000 1.000000 0.000000 0.000000
+          children [
+            Box {
+              size 0.032051 0.050641 0.001000
+            }
+          ]
+        }
+        physics Physics {
+          density -1
+          mass 0.000899
+          centerOfMass [ 0.021289 0.024075 0.000500 ]
+          inertiaMatrix [
+            2.342241e-07 6.720559e-08 3.012798e-07
+            2.886735e-09 1.818878e-15 1.676934e-14
+          ]
+        }
+      }
+      %{ end }%
+      %{ if number == "4" then }%
+      Solid {
+        translation 0.050398 -0.033281 0.049754
+        rotation 0.998099 0.043577 0.043577 1.572703
+        children [
+          SAHRV71_num_04Mesh {
+          }
+        ]
+        name "num_04"
+        boundingObject Transform {
+          translation 0.017949 0.024425 0.000500
+          rotation 0.000000 1.000000 0.000000 0.000000
+          children [
+            Box {
+              size 0.034615 0.049359 0.001000
+            }
+          ]
+        }
+        physics Physics {
+          density -1
+          mass 0.000963
+          centerOfMass [ 0.019818 0.023394 0.000500 ]
+          inertiaMatrix [
+            1.324947e-07 6.557888e-08 1.979132e-07
+            -7.812316e-09 -1.406207e-23 6.410650e-24
+          ]
+        }
+      }
+      %{ end }%
+      %{ if number == "5" then }%
+      Solid {
+        translation 0.049465 -0.033363 0.050500
+        rotation 0.998099 0.043577 0.043577 1.572703
+        children [
+          SAHRV71_num_05Mesh {
+          }
+        ]
+        name "num_05"
+        boundingObject Transform {
+          translation 0.019231 0.024105 0.000500
+          rotation 0.000000 1.000000 0.000000 0.000000
+          children [
+            Box {
+              size 0.032051 0.050000 0.001000
+            }
+          ]
+        }
+        physics Physics {
+          density -1
+          mass 0.001007
+          centerOfMass [ 0.019237 0.024917 0.000500 ]
+          inertiaMatrix [
+            2.444978e-07 8.190701e-08 3.262371e-07
+            1.084042e-08 4.257134e-15 -2.042330e-14
+          ]
+        }
+      }
+      %{ end }%
+      %{ if number == "1" then }%
+      Solid {
+        translation 0.039319 0.094191 0.002854
+        rotation 0.098514 -0.703668 -0.703666 2.945199
+        children [
+          SAHRV71_number_01Mesh {
+          }
+        ]
+        name "number_01"
+        boundingObject Transform {
+          translation 0.016667 0.024746 0.000500
+          rotation 0.000000 1.000000 0.000000 0.000000
+          children [
+            Box {
+              size 0.017949 0.050000 0.001000
+            }
+          ]
+        }
+        physics Physics {
+          density -1
+          mass 0.000556
+          centerOfMass [ 0.020778 0.027022 0.000500 ]
+          inertiaMatrix [
+            1.080986e-07 9.433419e-09 1.174393e-07
+            9.079101e-09 0.000000e+00 -1.943874e-23
+          ]
+        }
+      }
+      %{ end }%
+      %{ if number == "2" then }%
+      Solid {
+        translation 0.039134 0.094138 0.002854
+        rotation 0.098514 -0.703668 -0.703666 2.945199
+        children [
+          SAHRV71_number_02Mesh {
+          }
+        ]
+        name "number_02"
+        boundingObject Transform {
+          translation 0.018269 0.024746 0.000500
+          rotation 0.000000 1.000000 0.000000 0.000000
+          children [
+            Box {
+              size 0.032692 0.050000 0.001000
+            }
+          ]
+        }
+        physics Physics {
+          density -1
+          mass 0.000969
+          centerOfMass [ 0.019015 0.022846 0.000500 ]
+          inertiaMatrix [
+            2.815399e-07 7.615294e-08 3.575314e-07
+            -1.882287e-08 -5.355306e-14 -2.408320e-14
+          ]
+        }
+      }
+      %{ end }%
+      %{ if number == "3" then }%
+      Solid {
+        translation 0.039997 0.094384 0.003600
+        rotation 0.098514 -0.703668 -0.703666 2.945199
+        children [
+          SAHRV71_number_03Mesh {
+          }
+        ]
+        name "number_03"
+        boundingObject Transform {
+          translation 0.019231 0.024425 0.000500
+          rotation 0.000000 1.000000 0.000000 0.000000
+          children [
+            Box {
+              size 0.032051 0.050641 0.001000
+            }
+          ]
+        }
+        physics Physics {
+          density -1
+          mass 0.000899
+          centerOfMass [ 0.021289 0.024075 0.000500 ]
+          inertiaMatrix [
+            2.342241e-07 6.720559e-08 3.012798e-07
+            2.886735e-09 1.818878e-15 1.676934e-14
+          ]
+        }
+      }
+      %{ end }%
+      %{ if number == "4" then }%
+      Solid {
+        translation 0.040244 0.094455 0.002854
+        rotation 0.098514 -0.703668 -0.703666 2.945199
+        children [
+          SAHRV71_number_04Mesh {
+          }
+        ]
+        name "number_04"
+        boundingObject Transform {
+          translation 0.017949 0.024425 0.000500
+          rotation 0.000000 1.000000 0.000000 0.000000
+          children [
+            Box {
+              size 0.034615 0.049359 0.001000
+            }
+          ]
+        }
+        physics Physics {
+          density -1
+          mass 0.000963
+          centerOfMass [ 0.019818 0.023394 0.000500 ]
+          inertiaMatrix [
+            1.324947e-07 6.557888e-08 1.979132e-07
+            -7.812316e-09 1.985233e-23 -2.522901e-23
+          ]
+        }
+      }
+      %{ end }%
+      %{ if number == "5" then }%
+      Solid {
+        translation 0.041920 0.094934 0.003600
+        rotation 0.098529 -0.703666 -0.703666 2.945169
+        children [
+          SAHRV71_number_05Mesh {
+          }
+        ]
+        name "number_05"
+        boundingObject Transform {
+          translation 0.019231 0.024105 0.000500
+          rotation 0.000000 1.000000 0.000000 0.000000
+          children [
+            Box {
+              size 0.032051 0.050000 0.001000
+            }
+          ]
+        }
+        physics Physics {
+          density -1
+          mass 0.000963
+          centerOfMass [ 0.019818 0.023394 0.000500 ]
+          inertiaMatrix [
+            1.324947e-07 6.557888e-08 1.979132e-07
+            -7.812316e-09 1.985233e-23 -2.522901e-23
+          ]
+        }
+      }
+      %{ end }%
+    ]
+    name IS name 
+    boundingObject Group {
+      children [
+        Transform {
+          translation 0.050658 0.033853 0.11  
+          rotation 0.000000 1.000000 0.000000 0.000000
+          children [
+            Box {
+              size 0.146400 0.140223 0.14
+            }
+          ]
+        }
+
+        Transform {
+          translation 0.099 -0.0 0.015
+          rotation 0.000000 1.000000 0.000000 0.000000
+          children [
+            Box {
+              size 0.044 0.065 0.05
+            }
+          ]
+        }
+
+        Transform {
+          translation 0.002 -0.0 0.015
+          rotation 0.000000 1.000000 0.000000 0.000000
+          children [
+            Box {
+              size 0.044 0.065 0.05
+            }
+          ]
+        }
+        Transform {
+          translation 0.050658 0.055 0.0185
+          rotation 0.000000 1.000000 0.000000 0.000000
+          children [
+            Box {
+              size 0.146400 0.05 0.045
+            }
+          ]
+        }
+      ]
+    }
+    physics Physics {
+      density -1
+      mass 2.244518
+      centerOfMass [ 0.051018 0.031673 0.076972 ]
+      inertiaMatrix [
+        1.221370e-03 2.692811e-03 2.548973e-03
+        -7.319495e-07 1.316733e-06 4.787460e-06
+      ]
+    }
+  }
+}

@@ -1,0 +1,62 @@
+#VRML_SIM R2023a utf8
+# license: Apache License 2.0
+# license url: http://www.apache.org/licenses/LICENSE-2.0
+# tag: static
+# Chessboard for camera calibration
+PROTO Chessboard [
+  field SFVec3f    translation        0 0 0.5
+  field SFRotation rotation           1 0 0 1.5708
+  field SFString   name               "Chessboard"
+  field SFInt32    height             7
+  field SFInt32    width              9
+  field SFFloat    cellSize        0.0574
+]
+{
+  %{
+    squareColor = 0
+  }%
+  Solid {
+    translation IS translation
+    rotation IS rotation
+    children [
+      %{ for i=0, fields.height.value do}%
+        %{ for j=0, fields.width.value do}%
+          Transform {
+            translation 0 %{= i*fields.cellSize.value - fields.cellSize.value*(fields.height.value/2)}% %{= j*fields.cellSize.value - fields.cellSize.value*(fields.width.value/2)}%
+            rotation 0 0 1 1.5708
+            children [
+              Shape {
+                appearance PBRAppearance {
+                  baseColor %{= (i+j) % 2}% %{= (i+j) % 2}% %{= (i+j) % 2}%
+                  metalness 0
+                  roughness 0.2
+                }
+                geometry Box {
+                  size %{= fields.cellSize.value}% 0.01 %{= fields.cellSize.value}%
+                }
+              }
+            ]
+          }
+        %{ end }%
+      %{ end }%
+      Transform {
+            translation 0 %{= fields.cellSize.value*(fields.height.value)*0.5 - fields.cellSize.value*(fields.height.value/2)}% %{= fields.cellSize.value*(fields.width.value)*0.5 - fields.cellSize.value*(fields.width.value/2)}%
+            rotation 0 0 1 1.5708
+            children [
+              Shape {
+                appearance PBRAppearance {
+                  baseColor 1 1 1
+                  metalness 0
+                  roughness 0.2
+                }
+                geometry Box {
+                  size %{= fields.cellSize.value*(fields.height.value+4)}% 0.008 %{= fields.cellSize.value*(fields.width.value+4)}%
+                }
+              }
+            ]
+          }
+    ]
+    name IS name
+    model "Chessboard"
+  }
+}

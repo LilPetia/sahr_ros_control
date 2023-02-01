@@ -1,0 +1,29 @@
+#VRML_SIM R2023a utf8
+# license: Apache License 2.0
+# license url: http://www.apache.org/licenses/LICENSE-2.0
+# tags: hidden
+# Extracted from: RhobanPhiztech43/urdf/RhobanPhiztech43.urdf
+PROTO RhobanPhiztech43_right_footMesh [
+]
+{
+  Shape {
+    appearance DEF right_foot_material PBRAppearance {
+      baseColor 0.800000 0.800000 0.800000
+      transparency 0.000000
+      roughness 1.000000
+      metalness 0
+      emissiveColor 0.000000 0.000000 0.000000
+    }
+    geometry DEF right_foot IndexedFaceSet {
+      coord Coordinate {
+        point [
+          -0.000246 -0.000256 0.000248, -0.000275 0.000243 0.000230, -0.000224 -0.000273 -0.000251, -0.000253 0.000226 -0.000269, 0.000253 -0.000226 0.000269, 0.000275 -0.000243 -0.000230, 0.000224 0.000273 0.000251, 0.000246 0.000256 -0.000248, 
+        ]
+      }
+      coordIndex [
+        2 1 3 -1 4 0 5 -1 5 0 2 -1 6 4 7 -1 7 4 5 -1 1 6 3 -1 3 6 7 -1 4 6 0 -1 0 6 1 -1 7 5 3 -1 3 5 2 -1 
+      ]
+      creaseAngle 1
+    }
+  }
+}

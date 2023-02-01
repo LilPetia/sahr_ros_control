@@ -1,0 +1,36 @@
+#VRML_SIM R2022b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/robots/universal_robots/protos/UR10e.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.03512410266665358 0.04270368560718792 -0.998470176143196 1.4338589612560468
+  position 0.3083730490004416 2.22523012634563 0.39625836503015777
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+}
+UR10e {
+  hidden position_0_0 -0.00019740066951978719
+  hidden rotation_1 0 0 -1 0.00019740066946595324
+  hidden position_1_0 0.00011776495555009972
+  hidden rotation_2 0 1 0 1.57091376495555
+  hidden position_2_0 2.630255160531463e-05
+  hidden rotation_3 0 1 0 2.6302554544661462e-05
+  hidden position_3_0 -9.713786364471443e-06
+  hidden rotation_4 0 1 0 1.5707862862136355
+  hidden position_4_0 2.2049460149791138e-07
+  hidden rotation_5 0 0 1 2.210199382035633e-07
+  hidden position_5_0 9.684063073889872e-12
+  controller "ros"
+  controllerArgs [
+    ""
+  ]
+}

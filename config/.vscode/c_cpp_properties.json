@@ -1,0 +1,32 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/hua/laba/ros2_ws/install/realtime_tools/include/**",
+        "/home/hua/laba/ros2_ws/install/irobot_events_executor/include/**",
+        "/home/hua/laba/ros2_ws/install/dynamixel_workbench_toolbox/include/**",
+        "/home/hua/laba/ros2_ws/install/dynamixel_sdk/include/**",
+        "/home/hua/laba/ros2_ws/install/bitbots_msgs/include/**",
+        "/home/hua/laba/ros2_ws/install/backward_ros/include/**",
+        "/opt/ros/humble/include/**",
+        "/home/hua/laba/ros2_ws/src/DynamixelSDK/ros/include/**",
+        "/home/hua/laba/ros2_ws/src/backward_ros/include/**",
+        "/home/hua/laba/ros2_ws/src/bitbots_ros_control/include/**",
+        "/home/hua/laba/ros2_ws/src/dynamixel-workbench/dynamixel_workbench_toolbox/include/**",
+        "/home/hua/laba/ros2_ws/src/events-executor/irobot_events_executor/include/**",
+        "/home/hua/laba/ros2_ws/src/realtime_tools/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

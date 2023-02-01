@@ -1,0 +1,39 @@
+#VRML_SIM R2023a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/balls/protos/Ball.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/balls/protos/SoccerBall.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/balls/protos/RobocupSoccerBall.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "../protos/RobocupSoccerField.proto"
+EXTERNPROTO "../protos/RhobanPhiztech43.proto"
+
+WorldInfo {
+  info [
+    "Description: official soccer simulation for the 2021 Robocup Virtual Humanoid League (kid size)"
+    "Version 0.1"
+  ]
+  title "Robocup V-HL Kid"
+  basicTimeStep 16
+}
+Viewpoint {
+  orientation -0.3451747610411287 0.5328397119529421 0.7726164803485008 4.069692013282432
+  position -6.038199251084665 1.7569656625874956 2.2325675903414104
+}
+TexturedBackground {
+  texture "stadium"
+}
+TexturedBackgroundLight {
+  texture "stadium"
+}
+RobocupSoccerField {
+  size "kid"
+}
+RobocupSoccerBall {
+  translation 0 -7.66497122050142e-05 0.04999568334219584
+  rotation 1 0 0 0.001531297144987488
+}
+RhobanPhiztech43 {
+  translation -3.09511 0.0377239 0.44
+  rotation 0 0 1 1.5708
+}
